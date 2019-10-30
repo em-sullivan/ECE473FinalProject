@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipeline_project
-Wed Oct 30 15:13:16 2019
+Wed Oct 30 16:07:06 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Oct 30 15:13:16 2019       ;
+; Analysis & Synthesis Status     ; Successful - Wed Oct 30 16:07:06 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; pipeline_project                            ;
 ; Top-level Entity Name           ; IF_ID                                       ;
@@ -166,13 +166,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                           ;
-+----------------------------------+-----------------+------------------------+------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path             ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------------+---------+
-; IF_ID.v                          ; yes             ; User Verilog HDL File  ; E:/ECE/ece473/Project-Milestone1/IF_ID.v ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                              ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
+; IF_ID.v                          ; yes             ; User Verilog HDL File  ; E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/IF_ID.v ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -256,64 +256,68 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Oct 30 15:12:59 2019
+    Info: Processing started: Wed Oct 30 16:06:48 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline_project -c pipeline_project
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vram.v
-    Info (12023): Found entity 1: vram File: E:/ECE/ece473/Project-Milestone1/vram.v Line: 40
+    Info (12023): Found entity 1: vram File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vram.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file vgaclk_0002.v
-    Info (12023): Found entity 1: vgaclk_0002 File: E:/ECE/ece473/Project-Milestone1/vgaclk_0002.v Line: 2
+    Info (12023): Found entity 1: vgaclk_0002 File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vgaclk_0002.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file vgaclk.v
-    Info (12023): Found entity 1: vgaclk File: E:/ECE/ece473/Project-Milestone1/vgaclk.v Line: 8
+    Info (12023): Found entity 1: vgaclk File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vgaclk.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file vga_control.v
-    Info (12023): Found entity 1: vga_control File: E:/ECE/ece473/Project-Milestone1/vga_control.v Line: 11
+    Info (12023): Found entity 1: vga_control File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vga_control.v Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file vga_block.bdf
     Info (12023): Found entity 1: VGA_BLOCK
 Info (12021): Found 1 design units, including 1 entities, in source file regfile.v
-    Info (12023): Found entity 1: regfile File: E:/ECE/ece473/Project-Milestone1/regfile.v Line: 5
+    Info (12023): Found entity 1: regfile File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/regfile.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file programcounter.v
-    Info (12023): Found entity 1: programCounter File: E:/ECE/ece473/Project-Milestone1/programCounter.v Line: 5
+    Info (12023): Found entity 1: programCounter File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/programCounter.v Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file onepulse.vhd
-    Info (12022): Found design unit 1: onepulse-a File: E:/ECE/ece473/Project-Milestone1/onepulse.vhd Line: 6
-    Info (12023): Found entity 1: onepulse File: E:/ECE/ece473/Project-Milestone1/onepulse.vhd Line: 3
+    Info (12022): Found design unit 1: onepulse-a File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/onepulse.vhd Line: 6
+    Info (12023): Found entity 1: onepulse File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/onepulse.vhd Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file mem_wb.v
-    Info (12023): Found entity 1: MEM_WB File: E:/ECE/ece473/Project-Milestone1/MEM_WB.v Line: 5
+    Info (12023): Found entity 1: MEM_WB File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/MEM_WB.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file lab_6.bdf
     Info (12023): Found entity 1: Lab_6
 Info (12021): Found 1 design units, including 1 entities, in source file lab_5.bdf
     Info (12023): Found entity 1: Lab_5
 Info (12021): Found 1 design units, including 1 entities, in source file if_id.v
-    Info (12023): Found entity 1: IF_ID File: E:/ECE/ece473/Project-Milestone1/IF_ID.v Line: 5
+    Info (12023): Found entity 1: IF_ID File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/IF_ID.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file id_ex.v
-    Info (12023): Found entity 1: ID_EX File: E:/ECE/ece473/Project-Milestone1/ID_EX.v Line: 5
+    Info (12023): Found entity 1: ID_EX File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/ID_EX.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file ex_mem.v
-    Info (12023): Found entity 1: EX_MEM File: E:/ECE/ece473/Project-Milestone1/EX_MEM.v Line: 5
+    Info (12023): Found entity 1: EX_MEM File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/EX_MEM.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file color_encoder.v
-    Info (12023): Found entity 1: color_encoder File: E:/ECE/ece473/Project-Milestone1/color_encoder.v Line: 5
+    Info (12023): Found entity 1: color_encoder File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/color_encoder.v Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file clk_div.vhd
-    Info (12022): Found design unit 1: clk_div-a File: E:/ECE/ece473/Project-Milestone1/CLK_DIV.VHD Line: 21
-    Info (12023): Found entity 1: clk_div File: E:/ECE/ece473/Project-Milestone1/CLK_DIV.VHD Line: 6
+    Info (12022): Found design unit 1: clk_div-a File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/CLK_DIV.VHD Line: 21
+    Info (12023): Found entity 1: clk_div File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/CLK_DIV.VHD Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file char_engine.v
-    Info (12023): Found entity 1: char_engine File: E:/ECE/ece473/Project-Milestone1/char_engine.v Line: 10
+    Info (12023): Found entity 1: char_engine File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file alu_add.v
-    Info (12023): Found entity 1: ALU_add File: E:/ECE/ece473/Project-Milestone1/ALU_add.v Line: 1
+    Info (12023): Found entity 1: ALU_add File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/ALU_add.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file add4.v
-    Info (12023): Found entity 1: add4 File: E:/ECE/ece473/Project-Milestone1/add4.v Line: 1
+    Info (12023): Found entity 1: add4 File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/add4.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pipeline_project.bdf
     Info (12023): Found entity 1: pipeline_project
 Info (12021): Found 1 design units, including 1 entities, in source file ins_meme.v
-    Info (12023): Found entity 1: ins_meme File: E:/ECE/ece473/Project-Milestone1/ins_meme.v Line: 39
+    Info (12023): Found entity 1: ins_meme File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/ins_meme.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file data_memer.v
-    Info (12023): Found entity 1: data_memer File: E:/ECE/ece473/Project-Milestone1/data_memer.v Line: 39
+    Info (12023): Found entity 1: data_memer File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/data_memer.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file shift_left_two.v
-    Info (12023): Found entity 1: shift_left_two File: E:/ECE/ece473/Project-Milestone1/shift_left_two.v Line: 5
+    Info (12023): Found entity 1: shift_left_two File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/shift_left_two.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file sign_extender.v
-    Info (12023): Found entity 1: sign_extender File: E:/ECE/ece473/Project-Milestone1/sign_extender.v Line: 5
+    Info (12023): Found entity 1: sign_extender File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/sign_extender.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file fowarding_unit.v
-    Info (12023): Found entity 1: fowarding_unit File: E:/ECE/ece473/Project-Milestone1/fowarding_unit.v Line: 1
+    Info (12023): Found entity 1: fowarding_unit File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/fowarding_unit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controller.v
+    Info (12023): Found entity 1: controller File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/controller.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: alu File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/alu.v Line: 1
 Info (12127): Elaborating entity "IF_ID" for the top level hierarchy
-Info (144001): Generated suppressed messages file E:/ECE/ece473/Project-Milestone1/output_files/pipeline_project.map.smsg
+Info (144001): Generated suppressed messages file E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/output_files/pipeline_project.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 194 device resources after synthesis - the final resource count might be different
@@ -321,15 +325,15 @@ Info (21057): Implemented 194 device resources after synthesis - the final resou
     Info (21059): Implemented 64 output pins
     Info (21061): Implemented 64 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4858 megabytes
-    Info: Processing ended: Wed Oct 30 15:13:16 2019
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:35
+    Info: Peak virtual memory: 4856 megabytes
+    Info: Processing ended: Wed Oct 30 16:07:06 2019
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:37
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in E:/ECE/ece473/Project-Milestone1/output_files/pipeline_project.map.smsg.
+The suppressed messages can be found in E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/output_files/pipeline_project.map.smsg.
 
 
