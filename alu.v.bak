@@ -24,7 +24,7 @@ module alu(
 			
 			4'b0010: begin
 			
-				result = reg1 - reg2;  //sub
+				result = reg1 - reg2;
 			
 				
 	
