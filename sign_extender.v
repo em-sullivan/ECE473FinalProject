@@ -1,0 +1,16 @@
+// Eric Sullivan
+// 10/29/2019
+// Sign-extender
+
+module sign_extender(
+
+	input wire [15:0] in_num,
+	output reg [31:0] out_num);
+	
+	always @(in_num) begin
+	
+		out_num = { {16{in_num[15]}}, in_num[15:0] };
+		
+	end
+
+endmodule

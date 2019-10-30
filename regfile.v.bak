@@ -1,0 +1,60 @@
+// Eric Sullivan
+// 10/3/2019
+// Register Files
+
+module regfile(
+	input wire [4:0] radd1,
+	input wire [4:0] radd2,
+	input wire [31:0] wdi,
+	input wire [4:0] wadd,
+	input wire wen,
+	input wire res,
+	input wire clk,
+	input wire [4:0] radd_debug,
+	input wire clk_debug,
+	
+	output reg [31:0] dout1,
+	output reg [31:0] dout2,
+	output reg [31:0] dout_debug);
+	
+	integer i;
+	reg [31:0] register[31:0]; //Internal registers
+	
+	
+	initial begin	//Initialize registers
+		for (i =0; i < 32; i = i + 1) begin 
+		
+			register[i] = i;
+			
+		end
+	end
+	
+	always @(posedge clk) begin
+	
+		dout1 <= register[radd1]; //Which register is read from is based on read-in adresses
+		dout2 <= register[radd2];
+		
+		if(res == 1'b1) begin //Resets data back to initial values
+			for(i = 0; i < 32; i = i + 1) begin 
+				
+				register[i] = i;
+				
+			end
+		end
+		
+		else if (wen == 1'b1) begin
+			
+			register[wadd] = wdi; //Write data into register
+		
+		end
+		
+	end
+	
+	always @(posedge clk_debug) begin
+	
+		dout_debug <= register[radd_debug];
+		
+	end
+	
+endmodule
+		

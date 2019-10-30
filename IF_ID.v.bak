@@ -1,0 +1,56 @@
+//Eric Sullivan
+//10/10/2019
+//IF_ID Pipe
+
+module IF_ID (
+
+	input clk,
+	input rst,
+	input [31:0] if_id_in,
+	output reg [5:0] op_code,
+	output reg [4:0] rs,
+	output reg [4:0] rt,
+	output reg[4:0] rd,
+	output reg [4:0] shamt,
+	output reg [5:0] funct);
+	
+	initial begin
+	
+		op_code = 0;
+		rs = 0;
+		rt = 0;
+		rd = 0;
+		shamt = 0;
+		funct = 0;
+	
+	end
+	
+	always @(posedge clk) begin
+	
+		if(rst == 1'b1) begin
+		
+			op_code <= 0;
+			rs <= 0;
+			rt <= 0;
+			rd <= 0;
+			shamt <= 0;
+			funct <= 0;
+	
+			
+			
+		end
+		
+		else begin
+		
+			op_code <= if_id_in[31:26];
+			rs <= if_id_in[25:21];
+			rt <= if_id_in[20:16];
+			rd <= if_id_in[15:11];
+			shamt <= if_id_in[10:6];
+			funct <= if_id_in[5..0];
+			
+		end
+		
+	end
+	
+endmodule
