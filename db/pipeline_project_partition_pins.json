@@ -4,259 +4,279 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "pc_out[0]",
+					"name" : "data_out_a[0]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[1]",
+					"name" : "data_out_a[1]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[2]",
+					"name" : "data_out_a[2]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[3]",
+					"name" : "data_out_a[3]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[4]",
+					"name" : "data_out_a[4]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[5]",
+					"name" : "data_out_a[5]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[6]",
+					"name" : "data_out_a[6]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[7]",
+					"name" : "data_out_a[7]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[8]",
+					"name" : "data_out_a[8]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[9]",
+					"name" : "data_out_a[9]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[10]",
+					"name" : "data_out_a[10]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[11]",
+					"name" : "data_out_a[11]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[12]",
+					"name" : "data_out_a[12]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[13]",
+					"name" : "data_out_a[13]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[14]",
+					"name" : "data_out_a[14]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[15]",
+					"name" : "data_out_a[15]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[16]",
+					"name" : "data_out_a[16]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[17]",
+					"name" : "data_out_a[17]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[18]",
+					"name" : "data_out_a[18]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[19]",
+					"name" : "data_out_a[19]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[20]",
+					"name" : "data_out_a[20]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[21]",
+					"name" : "data_out_a[21]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[22]",
+					"name" : "data_out_a[22]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[23]",
+					"name" : "data_out_a[23]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[24]",
+					"name" : "data_out_a[24]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[25]",
+					"name" : "data_out_a[25]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[26]",
+					"name" : "data_out_a[26]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[27]",
+					"name" : "data_out_a[27]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[28]",
+					"name" : "data_out_a[28]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[29]",
+					"name" : "data_out_a[29]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[30]",
+					"name" : "data_out_a[30]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_out[31]",
+					"name" : "data_out_a[31]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[0]",
+					"name" : "data_out_b[0]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[1]",
+					"name" : "data_out_b[1]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[2]",
+					"name" : "data_out_b[2]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[3]",
+					"name" : "data_out_b[3]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[4]",
+					"name" : "data_out_b[4]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[5]",
+					"name" : "data_out_b[5]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[6]",
+					"name" : "data_out_b[6]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[7]",
+					"name" : "data_out_b[7]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[8]",
+					"name" : "data_out_b[8]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[9]",
+					"name" : "data_out_b[9]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[10]",
+					"name" : "data_out_b[10]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[11]",
+					"name" : "data_out_b[11]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[12]",
+					"name" : "data_out_b[12]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[13]",
+					"name" : "data_out_b[13]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[14]",
+					"name" : "data_out_b[14]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[15]",
+					"name" : "data_out_b[15]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[16]",
+					"name" : "data_out_b[16]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[17]",
+					"name" : "data_out_b[17]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[18]",
+					"name" : "data_out_b[18]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[19]",
+					"name" : "data_out_b[19]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[20]",
+					"name" : "data_out_b[20]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[21]",
+					"name" : "data_out_b[21]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[22]",
+					"name" : "data_out_b[22]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[23]",
+					"name" : "data_out_b[23]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[24]",
+					"name" : "data_out_b[24]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[25]",
+					"name" : "data_out_b[25]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[26]",
+					"name" : "data_out_b[26]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[27]",
+					"name" : "data_out_b[27]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[28]",
+					"name" : "data_out_b[28]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[29]",
+					"name" : "data_out_b[29]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[30]",
+					"name" : "data_out_b[30]",
 					"strict" : false
 				},
 				{
-					"name" : "ins_out[31]",
+					"name" : "data_out_b[31]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_out[4]",
 					"strict" : false
 				},
 				{
@@ -264,7 +284,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[0]",
+					"name" : "data_in_a[0]",
 					"strict" : false
 				},
 				{
@@ -272,255 +292,275 @@
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[1]",
+					"name" : "data_in_a[1]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[2]",
+					"name" : "data_in_a[2]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[3]",
+					"name" : "data_in_a[3]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[4]",
+					"name" : "data_in_a[4]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[5]",
+					"name" : "data_in_a[5]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[6]",
+					"name" : "data_in_a[6]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[7]",
+					"name" : "data_in_a[7]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[8]",
+					"name" : "data_in_a[8]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[9]",
+					"name" : "data_in_a[9]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[10]",
+					"name" : "data_in_a[10]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[11]",
+					"name" : "data_in_a[11]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[12]",
+					"name" : "data_in_a[12]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[13]",
+					"name" : "data_in_a[13]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[14]",
+					"name" : "data_in_a[14]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[15]",
+					"name" : "data_in_a[15]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[16]",
+					"name" : "data_in_a[16]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[17]",
+					"name" : "data_in_a[17]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[18]",
+					"name" : "data_in_a[18]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[19]",
+					"name" : "data_in_a[19]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[20]",
+					"name" : "data_in_a[20]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[21]",
+					"name" : "data_in_a[21]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[22]",
+					"name" : "data_in_a[22]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[23]",
+					"name" : "data_in_a[23]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[24]",
+					"name" : "data_in_a[24]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[25]",
+					"name" : "data_in_a[25]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[26]",
+					"name" : "data_in_a[26]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[27]",
+					"name" : "data_in_a[27]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[28]",
+					"name" : "data_in_a[28]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[29]",
+					"name" : "data_in_a[29]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[30]",
+					"name" : "data_in_a[30]",
 					"strict" : false
 				},
 				{
-					"name" : "pc_in[31]",
+					"name" : "data_in_a[31]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[0]",
+					"name" : "data_in_b[0]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[1]",
+					"name" : "data_in_b[1]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[2]",
+					"name" : "data_in_b[2]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[3]",
+					"name" : "data_in_b[3]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[4]",
+					"name" : "data_in_b[4]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[5]",
+					"name" : "data_in_b[5]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[6]",
+					"name" : "data_in_b[6]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[7]",
+					"name" : "data_in_b[7]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[8]",
+					"name" : "data_in_b[8]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[9]",
+					"name" : "data_in_b[9]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[10]",
+					"name" : "data_in_b[10]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[11]",
+					"name" : "data_in_b[11]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[12]",
+					"name" : "data_in_b[12]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[13]",
+					"name" : "data_in_b[13]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[14]",
+					"name" : "data_in_b[14]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[15]",
+					"name" : "data_in_b[15]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[16]",
+					"name" : "data_in_b[16]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[17]",
+					"name" : "data_in_b[17]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[18]",
+					"name" : "data_in_b[18]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[19]",
+					"name" : "data_in_b[19]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[20]",
+					"name" : "data_in_b[20]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[21]",
+					"name" : "data_in_b[21]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[22]",
+					"name" : "data_in_b[22]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[23]",
+					"name" : "data_in_b[23]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[24]",
+					"name" : "data_in_b[24]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[25]",
+					"name" : "data_in_b[25]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[26]",
+					"name" : "data_in_b[26]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[27]",
+					"name" : "data_in_b[27]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[28]",
+					"name" : "data_in_b[28]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[29]",
+					"name" : "data_in_b[29]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[30]",
+					"name" : "data_in_b[30]",
 					"strict" : false
 				},
 				{
-					"name" : "if_id_in[31]",
+					"name" : "data_in_b[31]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_in[4]",
 					"strict" : false
 				}
 			]

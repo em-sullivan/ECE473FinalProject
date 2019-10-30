@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Wed Oct 30 16:07:06 2019
+Analysis & Synthesis Status : Successful - Wed Oct 30 16:31:58 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : pipeline_project
-Top-level Entity Name : IF_ID
+Top-level Entity Name : MEM_WB
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 64
-Total pins : 130
+Total registers : 69
+Total pins : 140
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

@@ -58,7 +58,7 @@ module alu(
 					
 					result = 1;
 					
-				end else
+				end else begin
 				
 					result = 0;
 				end

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipeline_project
-Wed Oct 30 16:07:06 2019
+Wed Oct 30 16:31:58 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -43,14 +43,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Oct 30 16:07:06 2019       ;
+; Analysis & Synthesis Status     ; Successful - Wed Oct 30 16:31:58 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; pipeline_project                            ;
-; Top-level Entity Name           ; IF_ID                                       ;
+; Top-level Entity Name           ; MEM_WB                                      ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 64                                          ;
-; Total pins                      ; 130                                         ;
+; Total registers                 ; 69                                          ;
+; Total pins                      ; 140                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -69,7 +69,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CEBA4F23C7        ;                    ;
-; Top-level entity name                                                           ; IF_ID              ; pipeline_project   ;
+; Top-level entity name                                                           ; MEM_WB             ; pipeline_project   ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -166,13 +166,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                              ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
-; IF_ID.v                          ; yes             ; User Verilog HDL File  ; E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/IF_ID.v ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                 ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
+; MEM_WB.v                         ; yes             ; User Verilog HDL File  ; E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/MEM_WB.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -180,7 +180,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 32        ;
+; Estimate of Logic utilization (ALMs needed) ; 35        ;
 ;                                             ;           ;
 ; Combinational ALUT usage for logic          ; 0         ;
 ;     -- 7 input functions                    ; 0         ;
@@ -189,15 +189,15 @@ refer to the applicable agreement for further details.
 ;     -- 4 input functions                    ; 0         ;
 ;     -- <=3 input functions                  ; 0         ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 64        ;
+; Dedicated logic registers                   ; 69        ;
 ;                                             ;           ;
-; I/O pins                                    ; 130       ;
+; I/O pins                                    ; 140       ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 64        ;
-; Total fan-out                               ; 386       ;
+; Maximum fan-out                             ; 69        ;
+; Total fan-out                               ; 416       ;
 ; Average fan-out                             ; 1.19      ;
 +---------------------------------------------+-----------+
 
@@ -207,7 +207,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |IF_ID                     ; 0 (0)               ; 64 (64)                   ; 0                 ; 0          ; 130  ; 0            ; |IF_ID              ; IF_ID       ; work         ;
+; |MEM_WB                    ; 0 (0)               ; 69 (69)                   ; 0                 ; 0          ; 140  ; 0            ; |MEM_WB             ; MEM_WB      ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -217,8 +217,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 64    ;
-; Number of registers using Synchronous Clear  ; 64    ;
+; Total registers                              ; 69    ;
+; Number of registers using Synchronous Clear  ; 69    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -232,9 +232,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------+---------------------------------+
 ; Type              ; Count                           ;
 +-------------------+---------------------------------+
-; arriav_ff         ; 64                              ;
-;     SCLR          ; 64                              ;
-; boundary_port     ; 130                             ;
+; arriav_ff         ; 69                              ;
+;     SCLR          ; 69                              ;
+; boundary_port     ; 140                             ;
 ;                   ;                                 ;
 ; Max LUT depth     ; 0.00                            ;
 ; Average LUT depth ; 0.00                            ;
@@ -256,7 +256,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Oct 30 16:06:48 2019
+    Info: Processing started: Wed Oct 30 16:31:41 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline_project -c pipeline_project
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -316,19 +316,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file control
     Info (12023): Found entity 1: controller File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/controller.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
     Info (12023): Found entity 1: alu File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/alu.v Line: 1
-Info (12127): Elaborating entity "IF_ID" for the top level hierarchy
+Info (12127): Elaborating entity "MEM_WB" for the top level hierarchy
 Info (144001): Generated suppressed messages file E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/output_files/pipeline_project.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 194 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 66 input pins
-    Info (21059): Implemented 64 output pins
-    Info (21061): Implemented 64 logic cells
+Info (21057): Implemented 209 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 71 input pins
+    Info (21059): Implemented 69 output pins
+    Info (21061): Implemented 69 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4856 megabytes
-    Info: Processing ended: Wed Oct 30 16:07:06 2019
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:37
+    Info: Processing ended: Wed Oct 30 16:31:58 2019
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:36
 
 
 +------------------------------------------+
