@@ -25,7 +25,7 @@ module alu(
 			2: begin
 			
 				result = reg1 - reg2; //sub
-			
+		
 			end
 			
 			3: begin
