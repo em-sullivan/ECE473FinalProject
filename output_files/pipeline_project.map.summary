@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Fri Nov 01 09:32:27 2019
+Analysis & Synthesis Status : Successful - Fri Nov 01 17:12:56 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : pipeline_project
-Top-level Entity Name : alu
+Top-level Entity Name : EX_MEM
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
-Total pins : 106
+Total registers : 72
+Total pins : 146
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0
