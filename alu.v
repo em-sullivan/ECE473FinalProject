@@ -48,7 +48,7 @@ module alu(
 			
 			6: begin 
 			
-				result = reg1 ^ reg2; //nor
+				result = ~(reg1 | reg2); //nor
 				
 			end
 			
@@ -84,6 +84,8 @@ module alu(
 			end
 			
 			11: begin //jr
+			
+				result = reg1;
 			
 			end
 			
