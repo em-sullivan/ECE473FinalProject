@@ -6,6 +6,14 @@ module alu(
 	input [4:0] shamt,
 	output reg [31:0] result);
 	
+	integer i;
+	
+	initial begin
+	
+		result = 0;
+		
+	end
+	
 	always @* begin
 	
 		case(op_code)
@@ -79,8 +87,18 @@ module alu(
 			
 			end
 			
-			10: begin //sra
+			10: begin //sra ~ IDK if this is goin to work
 			
+				result = reg1 >> shamt;
+				
+				if(reg1[31] == 1'b1) begin
+					
+					for(i=0; i<shamt; i=i+1)begin
+					
+						result[31-i] = 1'b1;
+						
+					end
+				end
 			end
 			
 			11: begin //jr
