@@ -1,3 +1,4 @@
 Warning (10268): Verilog HDL information at vga_control.v(44): always construct contains both blocking and non-blocking assignments File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vga_control.v Line: 44
+Warning (10268): Verilog HDL information at regfile.v(36): always construct contains both blocking and non-blocking assignments File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/regfile.v Line: 36
 Warning (10268): Verilog HDL information at char_engine.v(170): always construct contains both blocking and non-blocking assignments File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 170
 Warning (10268): Verilog HDL information at char_engine.v(204): always construct contains both blocking and non-blocking assignments File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 204

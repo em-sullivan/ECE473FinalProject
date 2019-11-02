@@ -27,6 +27,10 @@ module regfile(
 			register[i] = i;
 			
 		end
+		
+		register[1] = -30;
+		register[2] = 56;
+		
 	end
 	
 	always @(posedge clk) begin //Writes on the first half of the clock cycle
@@ -37,6 +41,10 @@ module regfile(
 				register[i] = i;
 				
 			end
+			
+			register[1] <= -30;
+			register[2] <= 56;
+			
 		end
 		
 		else if (wen == 1'b1) begin

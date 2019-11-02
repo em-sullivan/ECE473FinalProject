@@ -1,5 +1,5 @@
 Flow report for pipeline_project
-Fri Nov 01 17:13:57 2019
+Sat Nov 02 11:45:46 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,24 +40,24 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Nov 01 17:13:47 2019       ;
+; Flow Status                     ; Successful - Sat Nov 02 11:45:22 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; pipeline_project                            ;
-; Top-level Entity Name           ; EX_MEM                                      ;
+; Top-level Entity Name           ; pipeline_project                            ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 19 / 18,480 ( < 1 % )                       ;
-; Total registers                 ; 72                                          ;
-; Total pins                      ; 146 / 224 ( 65 % )                          ;
+; Logic utilization (in ALMs)     ; 2,305 / 18,480 ( 12 % )                     ;
+; Total registers                 ; 1898                                        ;
+; Total pins                      ; 17 / 224 ( 8 % )                            ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
-; Total DSP Blocks                ; 0 / 66 ( 0 % )                              ;
+; Total block memory bits         ; 311,296 / 3,153,920 ( 10 % )                ;
+; Total DSP Blocks                ; 1 / 66 ( 2 % )                              ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
 ; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0 / 4 ( 0 % )                               ;
+; Total PLLs                      ; 1 / 4 ( 25 % )                              ;
 ; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
 +---------------------------------+---------------------------------------------+
 
@@ -67,32 +67,38 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/01/2019 17:12:33 ;
+; Start date & time ; 11/02/2019 11:41:25 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipeline_project    ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                           ;
-+-------------------------------------+----------------------------------------+------------------+-------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value    ; Entity Name ; Section Id ;
-+-------------------------------------+----------------------------------------+------------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 184849024237180.157264275214572        ; --               ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --               ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --               ; --          ; --         ;
-; MISC_FILE                           ; ins_meme.bsf                           ; --               ; --          ; --         ;
-; MISC_FILE                           ; ins_meme_bb.v                          ; --               ; --          ; --         ;
-; MISC_FILE                           ; data_memer.bsf                         ; --               ; --          ; --         ;
-; MISC_FILE                           ; data_memer_bb.v                        ; --               ; --          ; --         ;
-; MISC_FILE                           ; req_ds_mux.bsf                         ; --               ; --          ; --         ;
-; MISC_FILE                           ; req_ds_mux_bb.v                        ; --               ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --               ; EX_MEM      ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --               ; EX_MEM      ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --               ; EX_MEM      ; Top        ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --               ; --          ; --         ;
-; TOP_LEVEL_ENTITY                    ; EX_MEM                                 ; pipeline_project ; --          ; --         ;
-+-------------------------------------+----------------------------------------+------------------+-------------+------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                        ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 184849024237180.157270928403264        ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; ins_meme.bsf                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; ins_meme_bb.v                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; data_memer.bsf                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; data_memer_bb.v                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; req_ds_mux.bsf                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; req_ds_mux_bb.v                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; dmem_alu.bsf                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; dmem_alu_bb.v                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; jr_mux.bsf                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; jr_mux_bb.v                            ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DE0_CV      ; Top        ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; DE0_CV      ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; DE0_CV      ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
++-------------------------------------+----------------------------------------+---------------+-------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -100,11 +106,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:23     ; 1.0                     ; 4858 MB             ; 00:00:43                           ;
-; Fitter               ; 00:00:42     ; 1.0                     ; 5936 MB             ; 00:01:09                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4814 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:09     ; 1.0                     ; 5042 MB             ; 00:00:09                           ;
-; Total                ; 00:01:20     ; --                      ; --                  ; 00:02:06                           ;
+; Analysis & Synthesis ; 00:00:36     ; 1.0                     ; 4936 MB             ; 00:00:54                           ;
+; Fitter               ; 00:03:09     ; 1.1                     ; 6087 MB             ; 00:06:26                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4864 MB             ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:23     ; 1.6                     ; 5158 MB             ; 00:00:32                           ;
+; Total                ; 00:04:15     ; --                      ; --                  ; 00:07:59                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

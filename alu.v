@@ -64,11 +64,11 @@ module alu(
 			
 				if (reg1 < reg2) begin
 					
-					result = 1;
+					result = 0;
 					
 				end else begin
 				
-					result = 0;
+					result = 1;
 				end
 				
 			
@@ -77,21 +77,21 @@ module alu(
 			
 			8: begin //sll
 			
-				result = reg1 << shamt;
+				result = reg2 << shamt;
 			
 			end
 			
 			9: begin //srl
 			
-				result = reg1 >> shamt;
+				result = reg2 >> shamt;
 			
 			end
 			
 			10: begin //sra ~ IDK if this is goin to work
 			
-				result = reg1 >> shamt;
+				result = reg2 >> shamt;
 				
-				if(reg1[31] == 1'b1) begin
+				if(reg2[31] == 1'b1) begin
 					
 					for(i=0; i<shamt; i=i+1)begin
 					
