@@ -1,5 +1,5 @@
 Timing Analyzer report for pipeline_project
-Sat Nov 02 11:45:46 2019
+Sun Nov 03 10:58:47 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -99,12 +99,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.58        ;
+; Average used               ; 1.59        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  58.0%      ;
+;     Processor 2            ;  58.9%      ;
 +----------------------------+-------------+
 
 
@@ -115,6 +115,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+-----------+--------+------------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 ; CLOCK_50                                                                      ; Base      ; 20.000 ; 50.0 MHz   ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;                                                                             ;                                                                                  ; { CLOCK_50 }                                                                      ;
 ; ID_EX:inst6|alu_code_out[0]                                                   ; Base      ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500  ;            ;           ;             ;       ;        ;           ;            ;          ;                                                                             ;                                                                                  ; { ID_EX:inst6|alu_code_out[0] }                                                   ;
+; IF_ID:inst4|ins_out[0]                                                        ; Base      ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500  ;            ;           ;             ;       ;        ;           ;            ;          ;                                                                             ;                                                                                  ; { IF_ID:inst4|ins_out[0] }                                                        ;
 ; IF_ID:inst4|ins_out[26]                                                       ; Base      ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500  ;            ;           ;             ;       ;        ;           ;            ;          ;                                                                             ;                                                                                  ; { IF_ID:inst4|ins_out[26] }                                                       ;
 ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; Generated ; 0.995  ; 1005.0 MHz ; 0.000 ; 0.497  ; 50.00      ; 10        ; 201         ;       ;        ;           ;            ; false    ; CLOCK_50                                                                    ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|refclkin      ; { inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] }   ;
 ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; Generated ; 39.800 ; 25.13 MHz  ; 0.000 ; 19.900 ; 50.00      ; 40        ; 1           ;       ;        ;           ;            ; false    ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|vco0ph[0] ; { inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk } ;
@@ -122,16 +123,17 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+-----------+--------+------------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Slow 1100mV 85C Model Fmax Summary                                                                                 ;
-+-----------+-----------------+-------------------------------------------------------------------------------+------+
-; Fmax      ; Restricted Fmax ; Clock Name                                                                    ; Note ;
-+-----------+-----------------+-------------------------------------------------------------------------------+------+
-; 59.87 MHz ; 59.87 MHz       ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
-; 81.93 MHz ; 81.93 MHz       ; IF_ID:inst4|ins_out[26]                                                       ;      ;
-; 93.18 MHz ; 93.18 MHz       ; key[0]                                                                        ;      ;
-; 108.6 MHz ; 108.6 MHz       ; ID_EX:inst6|alu_code_out[0]                                                   ;      ;
-+-----------+-----------------+-------------------------------------------------------------------------------+------+
++---------------------------------------------------------------------------------------------------------------------+
+; Slow 1100mV 85C Model Fmax Summary                                                                                  ;
++------------+-----------------+-------------------------------------------------------------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                                                                    ; Note ;
++------------+-----------------+-------------------------------------------------------------------------------+------+
+; 53.76 MHz  ; 53.76 MHz       ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 63.81 MHz  ; 63.81 MHz       ; IF_ID:inst4|ins_out[0]                                                        ;      ;
+; 70.56 MHz  ; 70.56 MHz       ; IF_ID:inst4|ins_out[26]                                                       ;      ;
+; 89.32 MHz  ; 89.32 MHz       ; key[0]                                                                        ;      ;
+; 139.28 MHz ; 139.28 MHz      ; ID_EX:inst6|alu_code_out[0]                                                   ;      ;
++------------+-----------------+-------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -146,10 +148,11 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                         ; Slack   ; End Point TNS ;
 +-------------------------------------------------------------------------------+---------+---------------+
-; IF_ID:inst4|ins_out[26]                                                       ; -16.030 ; -75.304       ;
-; ID_EX:inst6|alu_code_out[0]                                                   ; -14.609 ; -443.176      ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -10.970 ; -599.185      ;
-; key[0]                                                                        ; -7.872  ; -4870.571     ;
+; ID_EX:inst6|alu_code_out[0]                                                   ; -16.683 ; -513.666      ;
+; IF_ID:inst4|ins_out[0]                                                        ; -16.144 ; -63.620       ;
+; IF_ID:inst4|ins_out[26]                                                       ; -16.097 ; -80.196       ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -10.841 ; -658.054      ;
+; key[0]                                                                        ; -8.185  ; -6691.090     ;
 +-------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -158,10 +161,11 @@ HTML report is unavailable in plain text report export.
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; key[0]                                                                        ; -6.110 ; -206.461      ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.260  ; 0.000         ;
-; IF_ID:inst4|ins_out[26]                                                       ; 0.786  ; 0.000         ;
-; ID_EX:inst6|alu_code_out[0]                                                   ; 0.831  ; 0.000         ;
+; key[0]                                                                        ; -6.533 ; -175.805      ;
+; IF_ID:inst4|ins_out[26]                                                       ; -1.941 ; -5.550        ;
+; IF_ID:inst4|ins_out[0]                                                        ; -1.073 ; -1.975        ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.277  ; 0.000         ;
+; ID_EX:inst6|alu_code_out[0]                                                   ; 0.691  ; 0.000         ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -182,12 +186,13 @@ No paths to report.
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; key[0]                                                                        ; -2.636 ; -1529.086     ;
-; IF_ID:inst4|ins_out[26]                                                       ; -1.043 ; -10.204       ;
-; ID_EX:inst6|alu_code_out[0]                                                   ; -0.137 ; -1.625        ;
+; key[0]                                                                        ; -2.636 ; -1469.292     ;
+; IF_ID:inst4|ins_out[26]                                                       ; -1.354 ; -18.807       ;
+; IF_ID:inst4|ins_out[0]                                                        ; -1.247 ; -43.544       ;
+; ID_EX:inst6|alu_code_out[0]                                                   ; 0.069  ; 0.000         ;
 ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.497  ; 0.000         ;
 ; CLOCK_50                                                                      ; 9.949  ; 0.000         ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.495 ; 0.000         ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.496 ; 0.000         ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -198,7 +203,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 10
 Shortest Synchronizer Chain: 3 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 107.362 ns
+Worst Case Available Settling Time: 105.832 ns
 
 
 
@@ -208,10 +213,11 @@ Worst Case Available Settling Time: 107.362 ns
 +------------+-----------------+-------------------------------------------------------------------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                    ; Note ;
 +------------+-----------------+-------------------------------------------------------------------------------+------+
-; 60.4 MHz   ; 60.4 MHz        ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
-; 86.54 MHz  ; 86.54 MHz       ; IF_ID:inst4|ins_out[26]                                                       ;      ;
-; 95.75 MHz  ; 95.75 MHz       ; key[0]                                                                        ;      ;
-; 110.42 MHz ; 110.42 MHz      ; ID_EX:inst6|alu_code_out[0]                                                   ;      ;
+; 54.51 MHz  ; 54.51 MHz       ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ;      ;
+; 64.67 MHz  ; 64.67 MHz       ; IF_ID:inst4|ins_out[0]                                                        ;      ;
+; 72.97 MHz  ; 72.97 MHz       ; IF_ID:inst4|ins_out[26]                                                       ;      ;
+; 92.01 MHz  ; 92.01 MHz       ; key[0]                                                                        ;      ;
+; 137.32 MHz ; 137.32 MHz      ; ID_EX:inst6|alu_code_out[0]                                                   ;      ;
 +------------+-----------------+-------------------------------------------------------------------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -221,10 +227,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                         ; Slack   ; End Point TNS ;
 +-------------------------------------------------------------------------------+---------+---------------+
-; IF_ID:inst4|ins_out[26]                                                       ; -15.566 ; -73.406       ;
-; ID_EX:inst6|alu_code_out[0]                                                   ; -14.484 ; -436.800      ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -10.647 ; -579.780      ;
-; key[0]                                                                        ; -7.550  ; -4534.809     ;
+; ID_EX:inst6|alu_code_out[0]                                                   ; -16.425 ; -507.248      ;
+; IF_ID:inst4|ins_out[0]                                                        ; -15.802 ; -62.081       ;
+; IF_ID:inst4|ins_out[26]                                                       ; -15.701 ; -78.315       ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -10.740 ; -646.845      ;
+; key[0]                                                                        ; -7.835  ; -6272.016     ;
 +-------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -233,10 +240,11 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; key[0]                                                                        ; -5.891 ; -199.804      ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.240  ; 0.000         ;
-; IF_ID:inst4|ins_out[26]                                                       ; 0.584  ; 0.000         ;
-; ID_EX:inst6|alu_code_out[0]                                                   ; 0.786  ; 0.000         ;
+; key[0]                                                                        ; -6.413 ; -170.252      ;
+; IF_ID:inst4|ins_out[26]                                                       ; -1.802 ; -5.768        ;
+; IF_ID:inst4|ins_out[0]                                                        ; -1.258 ; -2.340        ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.264  ; 0.000         ;
+; ID_EX:inst6|alu_code_out[0]                                                   ; 0.539  ; 0.000         ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -257,12 +265,13 @@ No paths to report.
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; key[0]                                                                        ; -2.636 ; -1456.148     ;
-; IF_ID:inst4|ins_out[26]                                                       ; -1.111 ; -10.662       ;
-; ID_EX:inst6|alu_code_out[0]                                                   ; -0.064 ; -0.379        ;
+; key[0]                                                                        ; -2.636 ; -1428.323     ;
+; IF_ID:inst4|ins_out[26]                                                       ; -1.460 ; -20.552       ;
+; IF_ID:inst4|ins_out[0]                                                        ; -1.298 ; -44.938       ;
+; ID_EX:inst6|alu_code_out[0]                                                   ; 0.075  ; 0.000         ;
 ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.497  ; 0.000         ;
 ; CLOCK_50                                                                      ; 9.980  ; 0.000         ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.446 ; 0.000         ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.452 ; 0.000         ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -273,7 +282,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 10
 Shortest Synchronizer Chain: 3 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 107.583 ns
+Worst Case Available Settling Time: 106.147 ns
 
 
 
@@ -283,10 +292,11 @@ Worst Case Available Settling Time: 107.583 ns
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; IF_ID:inst4|ins_out[26]                                                       ; -9.097 ; -40.003       ;
-; ID_EX:inst6|alu_code_out[0]                                                   ; -7.411 ; -224.711      ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -6.175 ; -340.160      ;
-; key[0]                                                                        ; -4.874 ; -2026.333     ;
+; ID_EX:inst6|alu_code_out[0]                                                   ; -8.880 ; -266.338      ;
+; IF_ID:inst4|ins_out[0]                                                        ; -8.750 ; -33.957       ;
+; IF_ID:inst4|ins_out[26]                                                       ; -8.714 ; -40.961       ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -6.274 ; -362.754      ;
+; key[0]                                                                        ; -4.853 ; -3232.206     ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -295,10 +305,11 @@ Worst Case Available Settling Time: 107.583 ns
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; key[0]                                                                        ; -3.070 ; -100.951      ;
-; ID_EX:inst6|alu_code_out[0]                                                   ; 0.110  ; 0.000         ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.136  ; 0.000         ;
-; IF_ID:inst4|ins_out[26]                                                       ; 0.739  ; 0.000         ;
+; key[0]                                                                        ; -3.522 ; -90.787       ;
+; IF_ID:inst4|ins_out[26]                                                       ; -1.382 ; -3.083        ;
+; IF_ID:inst4|ins_out[0]                                                        ; -0.360 ; -0.517        ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.142  ; 0.000         ;
+; ID_EX:inst6|alu_code_out[0]                                                   ; 0.269  ; 0.000         ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -319,12 +330,13 @@ No paths to report.
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; key[0]                                                                        ; -2.174 ; -782.701      ;
-; IF_ID:inst4|ins_out[26]                                                       ; -0.358 ; -3.123        ;
-; ID_EX:inst6|alu_code_out[0]                                                   ; -0.116 ; -0.984        ;
+; key[0]                                                                        ; -2.174 ; -675.656      ;
+; IF_ID:inst4|ins_out[0]                                                        ; -0.411 ; -7.479        ;
+; IF_ID:inst4|ins_out[26]                                                       ; -0.391 ; -3.378        ;
+; ID_EX:inst6|alu_code_out[0]                                                   ; 0.096  ; 0.000         ;
 ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.497  ; 0.000         ;
 ; CLOCK_50                                                                      ; 9.643  ; 0.000         ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.784 ; 0.000         ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.785 ; 0.000         ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -335,7 +347,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 10
 Shortest Synchronizer Chain: 3 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 112.359 ns
+Worst Case Available Settling Time: 111.689 ns
 
 
 
@@ -345,10 +357,11 @@ Worst Case Available Settling Time: 112.359 ns
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; IF_ID:inst4|ins_out[26]                                                       ; -8.303 ; -37.159       ;
-; ID_EX:inst6|alu_code_out[0]                                                   ; -6.906 ; -209.684      ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -5.835 ; -322.609      ;
-; key[0]                                                                        ; -3.911 ; -1658.025     ;
+; ID_EX:inst6|alu_code_out[0]                                                   ; -8.175 ; -246.799      ;
+; IF_ID:inst4|ins_out[0]                                                        ; -7.998 ; -31.068       ;
+; IF_ID:inst4|ins_out[26]                                                       ; -7.983 ; -38.033       ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -5.904 ; -347.150      ;
+; key[0]                                                                        ; -3.861 ; -2719.701     ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -357,10 +370,11 @@ Worst Case Available Settling Time: 112.359 ns
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; key[0]                                                                        ; -2.990 ; -98.817       ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.122  ; 0.000         ;
-; ID_EX:inst6|alu_code_out[0]                                                   ; 0.139  ; 0.000         ;
-; IF_ID:inst4|ins_out[26]                                                       ; 0.639  ; 0.000         ;
+; key[0]                                                                        ; -3.468 ; -89.117       ;
+; IF_ID:inst4|ins_out[26]                                                       ; -1.178 ; -2.809        ;
+; IF_ID:inst4|ins_out[0]                                                        ; -0.403 ; -0.612        ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0.129  ; 0.000         ;
+; ID_EX:inst6|alu_code_out[0]                                                   ; 0.262  ; 0.000         ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -381,12 +395,13 @@ No paths to report.
 +-------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                         ; Slack  ; End Point TNS ;
 +-------------------------------------------------------------------------------+--------+---------------+
-; key[0]                                                                        ; -2.174 ; -725.413      ;
-; IF_ID:inst4|ins_out[26]                                                       ; -0.288 ; -2.260        ;
-; ID_EX:inst6|alu_code_out[0]                                                   ; 0.031  ; 0.000         ;
+; key[0]                                                                        ; -2.174 ; -660.092      ;
+; IF_ID:inst4|ins_out[26]                                                       ; -0.340 ; -2.616        ;
+; IF_ID:inst4|ins_out[0]                                                        ; -0.333 ; -5.556        ;
+; ID_EX:inst6|alu_code_out[0]                                                   ; 0.170  ; 0.000         ;
 ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; 0.497  ; 0.000         ;
 ; CLOCK_50                                                                      ; 9.632  ; 0.000         ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.786 ; 0.000         ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 18.787 ; 0.000         ;
 +-------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -397,7 +412,7 @@ The design MTBF is not calculated because there are no specified synchronizers i
 Number of Synchronizer Chains Found: 10
 Shortest Synchronizer Chain: 3 Registers
 Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-Worst Case Available Settling Time: 112.999 ns
+Worst Case Available Settling Time: 112.390 ns
 
 
 
@@ -407,20 +422,22 @@ Worst Case Available Settling Time: 112.999 ns
 +--------------------------------------------------------------------------------+-----------+----------+----------+---------+---------------------+
 ; Clock                                                                          ; Setup     ; Hold     ; Recovery ; Removal ; Minimum Pulse Width ;
 +--------------------------------------------------------------------------------+-----------+----------+----------+---------+---------------------+
-; Worst-case Slack                                                               ; -16.030   ; -6.110   ; N/A      ; N/A     ; -2.636              ;
+; Worst-case Slack                                                               ; -16.683   ; -6.533   ; N/A      ; N/A     ; -2.636              ;
 ;  CLOCK_50                                                                      ; N/A       ; N/A      ; N/A      ; N/A     ; 9.632               ;
-;  ID_EX:inst6|alu_code_out[0]                                                   ; -14.609   ; 0.110    ; N/A      ; N/A     ; -0.137              ;
-;  IF_ID:inst4|ins_out[26]                                                       ; -16.030   ; 0.584    ; N/A      ; N/A     ; -1.111              ;
+;  ID_EX:inst6|alu_code_out[0]                                                   ; -16.683   ; 0.262    ; N/A      ; N/A     ; 0.069               ;
+;  IF_ID:inst4|ins_out[0]                                                        ; -16.144   ; -1.258   ; N/A      ; N/A     ; -1.298              ;
+;  IF_ID:inst4|ins_out[26]                                                       ; -16.097   ; -1.941   ; N/A      ; N/A     ; -1.460              ;
 ;  inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A       ; N/A      ; N/A      ; N/A     ; 0.497               ;
-;  inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -10.970   ; 0.122    ; N/A      ; N/A     ; 18.446              ;
-;  key[0]                                                                        ; -7.872    ; -6.110   ; N/A      ; N/A     ; -2.636              ;
-; Design-wide TNS                                                                ; -5988.236 ; -206.461 ; 0.0      ; 0.0     ; -1540.915           ;
+;  inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -10.841   ; 0.129    ; N/A      ; N/A     ; 18.452              ;
+;  key[0]                                                                        ; -8.185    ; -6.533   ; N/A      ; N/A     ; -2.636              ;
+; Design-wide TNS                                                                ; -8006.626 ; -183.33  ; 0.0      ; 0.0     ; -1531.643           ;
 ;  CLOCK_50                                                                      ; N/A       ; N/A      ; N/A      ; N/A     ; 0.000               ;
-;  ID_EX:inst6|alu_code_out[0]                                                   ; -443.176  ; 0.000    ; N/A      ; N/A     ; -1.625              ;
-;  IF_ID:inst4|ins_out[26]                                                       ; -75.304   ; 0.000    ; N/A      ; N/A     ; -10.662             ;
+;  ID_EX:inst6|alu_code_out[0]                                                   ; -513.666  ; 0.000    ; N/A      ; N/A     ; 0.000               ;
+;  IF_ID:inst4|ins_out[0]                                                        ; -63.620   ; -2.340   ; N/A      ; N/A     ; -44.938             ;
+;  IF_ID:inst4|ins_out[26]                                                       ; -80.196   ; -5.768   ; N/A      ; N/A     ; -20.552             ;
 ;  inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; N/A       ; N/A      ; N/A      ; N/A     ; 0.000               ;
-;  inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -599.185  ; 0.000    ; N/A      ; N/A     ; 0.000               ;
-;  key[0]                                                                        ; -4870.571 ; -206.461 ; N/A      ; N/A     ; -1529.086           ;
+;  inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; -658.054  ; 0.000    ; N/A      ; N/A     ; 0.000               ;
+;  key[0]                                                                        ; -6691.090 ; -175.805 ; N/A      ; N/A     ; -1469.292           ;
 +--------------------------------------------------------------------------------+-----------+----------+----------+---------+---------------------+
 
 
@@ -550,15 +567,20 @@ Worst Case Available Settling Time: 112.999 ns
 +-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                    ; To Clock                                                                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------+----------+----------+----------+
-; ID_EX:inst6|alu_code_out[0]                                                   ; ID_EX:inst6|alu_code_out[0]                                                   ; 108      ; 108      ; 0        ; 0        ;
-; key[0]                                                                        ; ID_EX:inst6|alu_code_out[0]                                                   ; 0        ; 6061     ; 0        ; 0        ;
+; ID_EX:inst6|alu_code_out[0]                                                   ; ID_EX:inst6|alu_code_out[0]                                                   ; 83       ; 83       ; 0        ; 0        ;
+; key[0]                                                                        ; ID_EX:inst6|alu_code_out[0]                                                   ; 0        ; 182457   ; 0        ; 0        ;
+; IF_ID:inst4|ins_out[0]                                                        ; IF_ID:inst4|ins_out[0]                                                        ; 18       ; 18       ; 18       ; 18       ;
+; IF_ID:inst4|ins_out[26]                                                       ; IF_ID:inst4|ins_out[0]                                                        ; 8        ; 8        ; 8        ; 8        ;
+; key[0]                                                                        ; IF_ID:inst4|ins_out[0]                                                        ; 0        ; 292      ; 0        ; 292      ;
+; IF_ID:inst4|ins_out[0]                                                        ; IF_ID:inst4|ins_out[26]                                                       ; 11       ; 11       ; 0        ; 0        ;
 ; IF_ID:inst4|ins_out[26]                                                       ; IF_ID:inst4|ins_out[26]                                                       ; 4        ; 4        ; 0        ; 0        ;
-; key[0]                                                                        ; IF_ID:inst4|ins_out[26]                                                       ; 0        ; 168      ; 0        ; 0        ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1184694  ; 726      ; 759      ; 6253623  ;
-; key[0]                                                                        ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 1024     ; 0        ; 32       ;
+; key[0]                                                                        ; IF_ID:inst4|ins_out[26]                                                       ; 0        ; 156      ; 0        ; 0        ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1179467  ; 726      ; 760      ; 17040136 ;
+; key[0]                                                                        ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 1024     ; 32       ; 32       ;
 ; ID_EX:inst6|alu_code_out[0]                                                   ; key[0]                                                                        ; 0        ; 0        ; 32       ; 0        ;
+; IF_ID:inst4|ins_out[0]                                                        ; key[0]                                                                        ; 0        ; 0        ; 4        ; 4        ;
 ; IF_ID:inst4|ins_out[26]                                                       ; key[0]                                                                        ; 0        ; 0        ; 6        ; 0        ;
-; key[0]                                                                        ; key[0]                                                                        ; 0        ; 3448     ; 96       ; 7819     ;
+; key[0]                                                                        ; key[0]                                                                        ; 0        ; 3556     ; 96       ; 7829     ;
 +-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -568,15 +590,20 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                    ; To Clock                                                                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------+----------+----------+----------+
-; ID_EX:inst6|alu_code_out[0]                                                   ; ID_EX:inst6|alu_code_out[0]                                                   ; 108      ; 108      ; 0        ; 0        ;
-; key[0]                                                                        ; ID_EX:inst6|alu_code_out[0]                                                   ; 0        ; 6061     ; 0        ; 0        ;
+; ID_EX:inst6|alu_code_out[0]                                                   ; ID_EX:inst6|alu_code_out[0]                                                   ; 83       ; 83       ; 0        ; 0        ;
+; key[0]                                                                        ; ID_EX:inst6|alu_code_out[0]                                                   ; 0        ; 182457   ; 0        ; 0        ;
+; IF_ID:inst4|ins_out[0]                                                        ; IF_ID:inst4|ins_out[0]                                                        ; 18       ; 18       ; 18       ; 18       ;
+; IF_ID:inst4|ins_out[26]                                                       ; IF_ID:inst4|ins_out[0]                                                        ; 8        ; 8        ; 8        ; 8        ;
+; key[0]                                                                        ; IF_ID:inst4|ins_out[0]                                                        ; 0        ; 292      ; 0        ; 292      ;
+; IF_ID:inst4|ins_out[0]                                                        ; IF_ID:inst4|ins_out[26]                                                       ; 11       ; 11       ; 0        ; 0        ;
 ; IF_ID:inst4|ins_out[26]                                                       ; IF_ID:inst4|ins_out[26]                                                       ; 4        ; 4        ; 0        ; 0        ;
-; key[0]                                                                        ; IF_ID:inst4|ins_out[26]                                                       ; 0        ; 168      ; 0        ; 0        ;
-; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1184694  ; 726      ; 759      ; 6253623  ;
-; key[0]                                                                        ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 1024     ; 0        ; 32       ;
+; key[0]                                                                        ; IF_ID:inst4|ins_out[26]                                                       ; 0        ; 156      ; 0        ; 0        ;
+; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 1179467  ; 726      ; 760      ; 17040136 ;
+; key[0]                                                                        ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; 0        ; 1024     ; 32       ; 32       ;
 ; ID_EX:inst6|alu_code_out[0]                                                   ; key[0]                                                                        ; 0        ; 0        ; 32       ; 0        ;
+; IF_ID:inst4|ins_out[0]                                                        ; key[0]                                                                        ; 0        ; 0        ; 4        ; 4        ;
 ; IF_ID:inst4|ins_out[26]                                                       ; key[0]                                                                        ; 0        ; 0        ; 6        ; 0        ;
-; key[0]                                                                        ; key[0]                                                                        ; 0        ; 3448     ; 96       ; 7819     ;
+; key[0]                                                                        ; key[0]                                                                        ; 0        ; 3556     ; 96       ; 7829     ;
 +-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -601,9 +628,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 1     ; 1    ;
-; Unconstrained Input Port Paths  ; 1246  ; 1246 ;
+; Unconstrained Input Port Paths  ; 1256  ; 1256 ;
 ; Unconstrained Output Ports      ; 13    ; 13   ;
-; Unconstrained Output Port Paths ; 486   ; 486  ;
+; Unconstrained Output Port Paths ; 497   ; 497  ;
 +---------------------------------+-------+------+
 
 
@@ -614,6 +641,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+-----------+-------------+
 ; CLOCK_50                                                                      ; CLOCK_50                                                                      ; Base      ; Constrained ;
 ; ID_EX:inst6|alu_code_out[0]                                                   ; ID_EX:inst6|alu_code_out[0]                                                   ; Base      ; Constrained ;
+; IF_ID:inst4|ins_out[0]                                                        ; IF_ID:inst4|ins_out[0]                                                        ; Base      ; Constrained ;
 ; IF_ID:inst4|ins_out[26]                                                       ; IF_ID:inst4|ins_out[26]                                                       ; Base      ; Constrained ;
 ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]   ; Generated ; Constrained ;
 ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk ; Generated ; Constrained ;
@@ -687,7 +715,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Nov 02 11:45:23 2019
+    Info: Processing started: Sun Nov 03 10:58:25 2019
 Info: Command: quartus_sta pipeline_project -c pipeline_project
 Info: qsta_default_script.tcl version: #1
 Warning (20013): Ignored 24 assignments for entity "DE0_CV" -- entity does not exist in design
@@ -729,9 +757,12 @@ Info (332110): Deriving PLL clocks
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name key[0] key[0]
-    Info (332105): create_clock -period 1.000 -name IF_ID:inst4|ins_out[26] IF_ID:inst4|ins_out[26]
+    Info (332105): create_clock -period 1.000 -name IF_ID:inst4|ins_out[0] IF_ID:inst4|ins_out[0]
     Info (332105): create_clock -period 1.000 -name ID_EX:inst6|alu_code_out[0] ID_EX:inst6|alu_code_out[0]
+    Info (332105): create_clock -period 1.000 -name IF_ID:inst4|ins_out[26] IF_ID:inst4|ins_out[26]
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: inst14|alu_code[4]~1  from: dataa  to: combout
+    Info (332098): Cell: inst14|alu_code[4]~3  from: datad  to: combout
     Info (332098): Cell: inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
@@ -741,168 +772,186 @@ Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -16.030
+Info (332146): Worst-case setup slack is -16.683
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -16.030             -75.304 IF_ID:inst4|ins_out[26] 
-    Info (332119):   -14.609            -443.176 ID_EX:inst6|alu_code_out[0] 
-    Info (332119):   -10.970            -599.185 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -7.872           -4870.571 key[0] 
-Info (332146): Worst-case hold slack is -6.110
+    Info (332119):   -16.683            -513.666 ID_EX:inst6|alu_code_out[0] 
+    Info (332119):   -16.144             -63.620 IF_ID:inst4|ins_out[0] 
+    Info (332119):   -16.097             -80.196 IF_ID:inst4|ins_out[26] 
+    Info (332119):   -10.841            -658.054 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -8.185           -6691.090 key[0] 
+Info (332146): Worst-case hold slack is -6.533
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.110            -206.461 key[0] 
-    Info (332119):     0.260               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.786               0.000 IF_ID:inst4|ins_out[26] 
-    Info (332119):     0.831               0.000 ID_EX:inst6|alu_code_out[0] 
+    Info (332119):    -6.533            -175.805 key[0] 
+    Info (332119):    -1.941              -5.550 IF_ID:inst4|ins_out[26] 
+    Info (332119):    -1.073              -1.975 IF_ID:inst4|ins_out[0] 
+    Info (332119):     0.277               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.691               0.000 ID_EX:inst6|alu_code_out[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.636
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.636           -1529.086 key[0] 
-    Info (332119):    -1.043             -10.204 IF_ID:inst4|ins_out[26] 
-    Info (332119):    -0.137              -1.625 ID_EX:inst6|alu_code_out[0] 
+    Info (332119):    -2.636           -1469.292 key[0] 
+    Info (332119):    -1.354             -18.807 IF_ID:inst4|ins_out[26] 
+    Info (332119):    -1.247             -43.544 IF_ID:inst4|ins_out[0] 
+    Info (332119):     0.069               0.000 ID_EX:inst6|alu_code_out[0] 
     Info (332119):     0.497               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.949               0.000 CLOCK_50 
-    Info (332119):    18.495               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.496               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 10 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 10
     Info (332114): Shortest Synchronizer Chain: 3 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 107.362 ns
+    Info (332114): Worst Case Available Settling Time: 105.832 ns
     Info (332114): 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: inst14|alu_code[4]~1  from: dataa  to: combout
+    Info (332098): Cell: inst14|alu_code[4]~3  from: datad  to: combout
     Info (332098): Cell: inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -15.566
+Info (332146): Worst-case setup slack is -16.425
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -15.566             -73.406 IF_ID:inst4|ins_out[26] 
-    Info (332119):   -14.484            -436.800 ID_EX:inst6|alu_code_out[0] 
-    Info (332119):   -10.647            -579.780 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -7.550           -4534.809 key[0] 
-Info (332146): Worst-case hold slack is -5.891
+    Info (332119):   -16.425            -507.248 ID_EX:inst6|alu_code_out[0] 
+    Info (332119):   -15.802             -62.081 IF_ID:inst4|ins_out[0] 
+    Info (332119):   -15.701             -78.315 IF_ID:inst4|ins_out[26] 
+    Info (332119):   -10.740            -646.845 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -7.835           -6272.016 key[0] 
+Info (332146): Worst-case hold slack is -6.413
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.891            -199.804 key[0] 
-    Info (332119):     0.240               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.584               0.000 IF_ID:inst4|ins_out[26] 
-    Info (332119):     0.786               0.000 ID_EX:inst6|alu_code_out[0] 
+    Info (332119):    -6.413            -170.252 key[0] 
+    Info (332119):    -1.802              -5.768 IF_ID:inst4|ins_out[26] 
+    Info (332119):    -1.258              -2.340 IF_ID:inst4|ins_out[0] 
+    Info (332119):     0.264               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.539               0.000 ID_EX:inst6|alu_code_out[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.636
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.636           -1456.148 key[0] 
-    Info (332119):    -1.111             -10.662 IF_ID:inst4|ins_out[26] 
-    Info (332119):    -0.064              -0.379 ID_EX:inst6|alu_code_out[0] 
+    Info (332119):    -2.636           -1428.323 key[0] 
+    Info (332119):    -1.460             -20.552 IF_ID:inst4|ins_out[26] 
+    Info (332119):    -1.298             -44.938 IF_ID:inst4|ins_out[0] 
+    Info (332119):     0.075               0.000 ID_EX:inst6|alu_code_out[0] 
     Info (332119):     0.497               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.980               0.000 CLOCK_50 
-    Info (332119):    18.446               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.452               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 10 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 10
     Info (332114): Shortest Synchronizer Chain: 3 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 107.583 ns
+    Info (332114): Worst Case Available Settling Time: 106.147 ns
     Info (332114): 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: inst14|alu_code[4]~1  from: dataa  to: combout
+    Info (332098): Cell: inst14|alu_code[4]~3  from: datad  to: combout
     Info (332098): Cell: inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -9.097
+Info (332146): Worst-case setup slack is -8.880
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -9.097             -40.003 IF_ID:inst4|ins_out[26] 
-    Info (332119):    -7.411            -224.711 ID_EX:inst6|alu_code_out[0] 
-    Info (332119):    -6.175            -340.160 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -4.874           -2026.333 key[0] 
-Info (332146): Worst-case hold slack is -3.070
+    Info (332119):    -8.880            -266.338 ID_EX:inst6|alu_code_out[0] 
+    Info (332119):    -8.750             -33.957 IF_ID:inst4|ins_out[0] 
+    Info (332119):    -8.714             -40.961 IF_ID:inst4|ins_out[26] 
+    Info (332119):    -6.274            -362.754 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -4.853           -3232.206 key[0] 
+Info (332146): Worst-case hold slack is -3.522
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.070            -100.951 key[0] 
-    Info (332119):     0.110               0.000 ID_EX:inst6|alu_code_out[0] 
-    Info (332119):     0.136               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.739               0.000 IF_ID:inst4|ins_out[26] 
+    Info (332119):    -3.522             -90.787 key[0] 
+    Info (332119):    -1.382              -3.083 IF_ID:inst4|ins_out[26] 
+    Info (332119):    -0.360              -0.517 IF_ID:inst4|ins_out[0] 
+    Info (332119):     0.142               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.269               0.000 ID_EX:inst6|alu_code_out[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174            -782.701 key[0] 
-    Info (332119):    -0.358              -3.123 IF_ID:inst4|ins_out[26] 
-    Info (332119):    -0.116              -0.984 ID_EX:inst6|alu_code_out[0] 
+    Info (332119):    -2.174            -675.656 key[0] 
+    Info (332119):    -0.411              -7.479 IF_ID:inst4|ins_out[0] 
+    Info (332119):    -0.391              -3.378 IF_ID:inst4|ins_out[26] 
+    Info (332119):     0.096               0.000 ID_EX:inst6|alu_code_out[0] 
     Info (332119):     0.497               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.643               0.000 CLOCK_50 
-    Info (332119):    18.784               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.785               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 10 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 10
     Info (332114): Shortest Synchronizer Chain: 3 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 112.359 ns
+    Info (332114): Worst Case Available Settling Time: 111.689 ns
     Info (332114): 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: inst14|alu_code[4]~1  from: dataa  to: combout
+    Info (332098): Cell: inst14|alu_code[4]~3  from: datad  to: combout
     Info (332098): Cell: inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
     Info (332098): Cell: inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
     Info (332098): Cell: inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -8.303
+Info (332146): Worst-case setup slack is -8.175
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.303             -37.159 IF_ID:inst4|ins_out[26] 
-    Info (332119):    -6.906            -209.684 ID_EX:inst6|alu_code_out[0] 
-    Info (332119):    -5.835            -322.609 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):    -3.911           -1658.025 key[0] 
-Info (332146): Worst-case hold slack is -2.990
+    Info (332119):    -8.175            -246.799 ID_EX:inst6|alu_code_out[0] 
+    Info (332119):    -7.998             -31.068 IF_ID:inst4|ins_out[0] 
+    Info (332119):    -7.983             -38.033 IF_ID:inst4|ins_out[26] 
+    Info (332119):    -5.904            -347.150 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    -3.861           -2719.701 key[0] 
+Info (332146): Worst-case hold slack is -3.468
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.990             -98.817 key[0] 
-    Info (332119):     0.122               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
-    Info (332119):     0.139               0.000 ID_EX:inst6|alu_code_out[0] 
-    Info (332119):     0.639               0.000 IF_ID:inst4|ins_out[26] 
+    Info (332119):    -3.468             -89.117 key[0] 
+    Info (332119):    -1.178              -2.809 IF_ID:inst4|ins_out[26] 
+    Info (332119):    -0.403              -0.612 IF_ID:inst4|ins_out[0] 
+    Info (332119):     0.129               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):     0.262               0.000 ID_EX:inst6|alu_code_out[0] 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174            -725.413 key[0] 
-    Info (332119):    -0.288              -2.260 IF_ID:inst4|ins_out[26] 
-    Info (332119):     0.031               0.000 ID_EX:inst6|alu_code_out[0] 
+    Info (332119):    -2.174            -660.092 key[0] 
+    Info (332119):    -0.340              -2.616 IF_ID:inst4|ins_out[26] 
+    Info (332119):    -0.333              -5.556 IF_ID:inst4|ins_out[0] 
+    Info (332119):     0.170               0.000 ID_EX:inst6|alu_code_out[0] 
     Info (332119):     0.497               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0] 
     Info (332119):     9.632               0.000 CLOCK_50 
-    Info (332119):    18.786               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
+    Info (332119):    18.787               0.000 inst|inst4|vgaclk_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk 
 Info (332114): Report Metastability: Found 10 synchronizer chains.
     Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
     Info (332114): Number of Synchronizer Chains Found: 10
     Info (332114): Shortest Synchronizer Chain: 3 Registers
     Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
-    Info (332114): Worst Case Available Settling Time: 112.999 ns
+    Info (332114): Worst Case Available Settling Time: 112.390 ns
     Info (332114): 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 5158 megabytes
-    Info: Processing ended: Sat Nov 02 11:45:46 2019
-    Info: Elapsed time: 00:00:23
+    Info: Peak virtual memory: 5162 megabytes
+    Info: Processing ended: Sun Nov 03 10:58:47 2019
+    Info: Elapsed time: 00:00:22
     Info: Total CPU time (on all processors): 00:00:32
 
 
