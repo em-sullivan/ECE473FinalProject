@@ -1,5 +1,5 @@
 Timing Analyzer report for pipeline_project
-Sun Nov 03 10:58:47 2019
+Tue Nov 05 09:37:11 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -99,12 +99,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.59        ;
+; Average used               ; 1.60        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  58.9%      ;
+;     Processor 2            ;  59.5%      ;
 +----------------------------+-------------+
 
 
@@ -715,7 +715,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Nov 03 10:58:25 2019
+    Info: Processing started: Tue Nov 05 09:36:49 2019
 Info: Command: quartus_sta pipeline_project -c pipeline_project
 Info: qsta_default_script.tcl version: #1
 Warning (20013): Ignored 24 assignments for entity "DE0_CV" -- entity does not exist in design
@@ -949,9 +949,9 @@ Info (332114): Report Metastability: Found 10 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 32 warnings
-    Info: Peak virtual memory: 5162 megabytes
-    Info: Processing ended: Sun Nov 03 10:58:47 2019
+    Info: Peak virtual memory: 5161 megabytes
+    Info: Processing ended: Tue Nov 05 09:37:11 2019
     Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Total CPU time (on all processors): 00:00:31
 
 
