@@ -5,7 +5,7 @@ module add4(
 	
 	always @* begin
 	
-		out = in +1;
+		out = in +4;
 		
 	end
 	

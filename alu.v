@@ -113,6 +113,61 @@ module alu(
 			
 			end
 			
+			13: begin // andi
+			
+				result = reg1 & reg2;
+				
+			end
+			
+			14: begin // ori
+			
+				result = reg1 | reg2;
+				
+			end
+			
+			15: begin // slti 
+			
+				if (reg1 < reg2) begin
+					
+					result = 1;
+					
+				end else begin
+				
+					result = 0;
+				end
+				
+			end
+			
+			16: begin //addi
+			
+				result = reg1 + reg2;
+				
+			end
+			
+			17: begin //addiu
+			
+				result = reg1 + reg2;
+				
+			end
+			
+			18: begin //lw
+			
+				result = reg1 + reg2;
+				
+			end
+			
+			19: begin //sw
+			
+				result = reg1 + reg2;
+				
+			end
+			
+			20: begin //lui
+			
+				result = reg2 << 16;
+				
+			end
+			
 			
 			default: begin  end
 			
