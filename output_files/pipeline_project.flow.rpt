@@ -1,5 +1,5 @@
 Flow report for pipeline_project
-Thu Nov 07 16:44:48 2019
+Sat Nov 09 18:27:33 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Nov 07 16:44:23 2019       ;
+; Flow Status                     ; Successful - Sat Nov 09 18:27:08 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; pipeline_project                            ;
 ; Top-level Entity Name           ; pipeline_project                            ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 2,548 / 18,480 ( 14 % )                     ;
-; Total registers                 ; 1989                                        ;
+; Logic utilization (in ALMs)     ; 2,673 / 18,480 ( 14 % )                     ;
+; Total registers                 ; 1998                                        ;
 ; Total pins                      ; 17 / 224 ( 8 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 311,296 / 3,153,920 ( 10 % )                ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/07/2019 16:39:38 ;
+; Start date & time ; 11/09/2019 18:22:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipeline_project    ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 184849024237180.157316277709468        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 184849024237180.157334174400936        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; ins_meme.bsf                           ; --            ; --          ; --         ;
@@ -97,6 +97,10 @@ refer to the applicable agreement for further details.
 ; MISC_FILE                           ; rt_foward_bb.v                         ; --            ; --          ; --         ;
 ; MISC_FILE                           ; imm_mux.bsf                            ; --            ; --          ; --         ;
 ; MISC_FILE                           ; imm_mux_bb.v                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; stall.bsf                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; stall_bb.v                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; pc_stall.bsf                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; pc_stall_bb.v                          ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; DE0_CV      ; Top        ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; DE0_CV      ; Top        ;
@@ -115,11 +119,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:41     ; 1.0                     ; 4934 MB             ; 00:00:58                           ;
-; Fitter               ; 00:03:52     ; 1.1                     ; 6086 MB             ; 00:07:41                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 4861 MB             ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:24     ; 1.6                     ; 5165 MB             ; 00:00:34                           ;
-; Total                ; 00:05:04     ; --                      ; --                  ; 00:09:20                           ;
+; Analysis & Synthesis ; 00:00:47     ; 1.0                     ; 4939 MB             ; 00:01:03                           ;
+; Fitter               ; 00:03:45     ; 1.1                     ; 6089 MB             ; 00:07:36                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4862 MB             ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:24     ; 1.6                     ; 5165 MB             ; 00:00:35                           ;
+; Total                ; 00:05:03     ; --                      ; --                  ; 00:09:21                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
