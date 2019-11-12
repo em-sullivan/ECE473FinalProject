@@ -160,10 +160,20 @@ module controller (
 				alu_sel = 1;
 				alu_code = 20;
 				
-			end else begin end
+			end else begin
+					
+					reg_wen = 0;
+					mem_wen = 0;
+					alu_code = 12;
+		
+			end
 			
 				
 		
+		end else begin
+		
+			reg_wen = 0;
+			
 		end
 		
 	end

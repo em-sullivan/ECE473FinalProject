@@ -11,7 +11,7 @@ module programCounter(
 	
 	initial begin
 	
-		pc_out = -4;
+		pc_out = 0;
 		
 	end
 	

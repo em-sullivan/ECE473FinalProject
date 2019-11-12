@@ -56,11 +56,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "key[1]",
+					"name" : "key[0]",
 					"strict" : false
 				},
 				{
-					"name" : "key[0]",
+					"name" : "key[1]",
 					"strict" : false
 				}
 			]

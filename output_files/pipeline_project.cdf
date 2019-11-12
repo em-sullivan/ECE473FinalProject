@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CEBA4F23) Path("E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/output_files/") File("pipeline_project.sof") MfrSpec(OpMask(1));
+		Device PartName(5CEBA4F23) Path("E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/output_files/Milestone-2-test/") File("m2-ben-nt.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

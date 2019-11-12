@@ -17,7 +17,7 @@ module hazard_control(
 		
 			if (ins[31:26] == 0) begin
 			
-				if(ins[25:21] == if_id_ins[25:21] || ins[20:16] == if_id_ins[20:16]) begin
+				if(ins[25:21] == if_id_ins[15:11] || ins[20:16] == if_id_ins[15:11]) begin
 				
 					stall = 1;
 					
