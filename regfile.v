@@ -12,6 +12,8 @@ module regfile(
 	input wire clk,
 	input wire [4:0] radd_debug,
 	input wire clk_debug,
+	input [5:0] op_code,
+	input [31:0] pc,
 	
 	output reg [31:0] dout1,
 	output reg [31:0] dout2,
@@ -51,6 +53,12 @@ module regfile(
 			
 			register[wadd] = wdi; //Write data into register
 		
+		end
+		
+		if (op_code == 6'b000011) begin //If function is jal
+			
+			register[31] = pc + 4;
+			
 		end
 		
 	end

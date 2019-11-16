@@ -7,7 +7,8 @@ module controller (
 	output reg mem_wen, //memory write enable
 	output reg jr,
 	output reg alu_sel, //Selects either rt or immediate
-	output reg [4:0] alu_code);
+	output reg [4:0] alu_code,
+	output reg jump);
 	
 	
 	always @* begin
@@ -20,6 +21,7 @@ module controller (
 			mem_wen = 0; 
 			jr = 0;
 			alu_sel = 0;
+			jump = 0;
 			
 			if(ins[5:0] == 6'b100000) begin //add
 			
@@ -91,6 +93,7 @@ module controller (
 				jr = 0;
 				alu_sel = 1;
 				alu_code = 13;
+				jump = 0;
 			
 			
 			end else if(ins[31:26] == 6'b001101) begin //ori
@@ -102,6 +105,7 @@ module controller (
 				jr = 0;
 				alu_sel = 1;
 				alu_code = 14;
+				jump = 0;
 				
 			end else if(ins[31:26] == 6'b001010) begin //slti
 			
@@ -112,6 +116,7 @@ module controller (
 				jr = 0;
 				alu_sel = 1;
 				alu_code = 15;
+				jump = 0;
 				
 			end else if(ins[31:26] == 6'b001000) begin // addi
 			
@@ -122,6 +127,7 @@ module controller (
 				jr = 0;
 				alu_sel = 1;
 				alu_code = 16;
+				jump = 0;
 				
 			end else if(ins[31:26] == 6'b001001) begin //addiu
 			
@@ -132,6 +138,7 @@ module controller (
 				jr = 0;
 				alu_sel = 1;
 				alu_code = 17;
+				jump = 0;
 				
 			end else if(ins[31:26] == 6'b100011) begin //lw
 			
@@ -141,6 +148,7 @@ module controller (
 				mem_wen = 0;
 				alu_sel = 1;
 				alu_code = 18;
+				jump = 0;
 				
 			end else if(ins[31:26] == 6'b101011) begin //sw
 			
@@ -150,6 +158,7 @@ module controller (
 				mem_wen = 1;
 				alu_sel = 1;
 				alu_code = 19;
+				jump = 0;
 				
 			end else if(ins[31:26] == 6'b001111) begin //lui
 			
@@ -159,12 +168,34 @@ module controller (
 				mem_wen = 0;
 				alu_sel = 1;
 				alu_code = 20;
+				jump = 0;
+				
+			end else if(ins[31:26] == 6'b000010) begin //j
+			
+				reg_wen = 0;
+				reg_des = 0;
+				dmem_alu = 0;
+				mem_wen = 0;
+				alu_sel = 1;
+				alu_code = 12;
+				jump = 1;
+				
+			
+			end else if(ins[31:26] == 6'b000011) begin //jal
+			
+				reg_wen = 0;
+				reg_des = 0;
+				dmem_alu = 0;
+				mem_wen = 0;
+				alu_sel = 1;
+				alu_code = 12;
+				jump = 1;
 				
 			end else begin
 					
-					reg_wen = 0;
-					mem_wen = 0;
-					alu_code = 12;
+				reg_wen = 0;
+				mem_wen = 0;
+				alu_code = 12;
 		
 			end
 			

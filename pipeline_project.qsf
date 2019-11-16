@@ -298,6 +298,9 @@ set_global_assignment -name QIP_FILE stall.qip
 set_global_assignment -name QIP_FILE pc_stall.qip
 set_global_assignment -name VERILOG_FILE branch_controller.v
 set_global_assignment -name QIP_FILE pc_branch.qip
+set_global_assignment -name VERILOG_FILE jump_shift.v
+set_global_assignment -name VERILOG_FILE concat.v
+set_global_assignment -name QIP_FILE jump_mux.qip
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
