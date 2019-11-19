@@ -4,13 +4,14 @@
 
 module concat(
 
-	input [27:0] shift_adress,
+	input [27:0] shift_address,
 	input [31:0] pc,
-	output reg [31:0] jump_adress);
+	output reg [31:0] jump_address);
 	
 	always @* begin
 	
-		jump_adress = { pc[3:0], shift_adress[27:0]};
+	
+		jump_address = { pc[31:28], shift_address[27:0]};
 		
 	end
 	

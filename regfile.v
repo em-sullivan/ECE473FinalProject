@@ -26,12 +26,9 @@ module regfile(
 	initial begin	//Initialize registers
 		for (i =0; i < 32; i = i + 1) begin 
 		
-			register[i] = i;
+			register[i] = 0;
 			
 		end
-		
-		register[1] = -30;
-		register[2] = 56;
 		
 	end
 	
@@ -40,12 +37,9 @@ module regfile(
 		if(res == 1'b1) begin //Resets data back to initial values
 			for(i = 0; i < 32; i = i + 1) begin 
 				
-				register[i] = i;
+				register[i] = 0;
 				
 			end
-			
-			register[1] <= -30;
-			register[2] <= 56;
 			
 		end
 		

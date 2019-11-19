@@ -4,7 +4,6 @@ module hazard_control(
 
 	input [31:0] ins,
 	input [31:0] if_id_ins,
-	input [4:0] alu_code,
 	output reg [31:0] nop,
 	output reg stall);
 	

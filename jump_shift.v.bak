@@ -4,8 +4,8 @@
 
 module jump_shift(
 
-	input [25:0] address,
-	output reg [27:0] shift_address);
+	input [25:0] adress,
+	output reg [27:0] shift_adress);
 	
 	integer gnd;
 	
@@ -13,7 +13,7 @@ module jump_shift(
 	
 		gnd = 2'b00;
 		
-		shift_address = {address[25:0], gnd[1:0]};
+		shift_adress = {adress[25:0], gnd[1:0]};
 		
 	end
 	
