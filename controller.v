@@ -74,6 +74,107 @@ module controller (
 				alu_code = 12;
 				
 			end
+<<<<<<< Updated upstream
+=======
+		end
+	
+		else if (ins[31:26] != 6'b000000) begin //If op-code is not 0, then i and j type instructions
+
+			if(ins[31:26] == 6'b001100) begin //andi
+			
+				reg_wen = 1;
+				reg_des = 1; //rt
+				dmem_alu = 0; //alu result
+				mem_wen = 0; 
+				jr = 0;
+				alu_sel = 1;
+				alu_code = 13;
+			
+			
+			end else if(ins[31:26] == 6'b001101) begin //ori
+			
+				reg_wen = 1;
+				reg_des = 1;
+				dmem_alu = 0;
+				mem_wen = 0;
+				jr = 0;
+				alu_sel = 1;
+				alu_code = 14;
+				
+			end else if(ins[31:26] == 6'b001010) begin //slti
+			
+				reg_wen = 1;
+				reg_des = 1;
+				dmem_alu = 0;
+				mem_wen = 0;
+				jr = 0;
+				alu_sel = 1;
+				alu_code = 15;
+				
+			end else if(ins[31:26] == 6'b001000) begin // addi
+			
+				reg_wen = 1;
+				reg_des = 1;
+				dmem_alu = 0;
+				mem_wen = 0;
+				jr = 0;
+				alu_sel = 1;
+				alu_code = 16;
+				
+			end else if(ins[31:26] == 6'b001001) begin //addiu
+			
+				reg_wen = 1;
+				reg_des = 1;
+				dmem_alu = 0;
+				mem_wen = 0;
+				jr = 0;
+				alu_sel = 1;
+				alu_code = 17;
+				
+			end else if(ins[31:26] == 6'b100011) begin //lw
+			
+				reg_wen = 1;
+				reg_des = 1;
+				dmem_alu = 1;
+				mem_wen = 0;
+				alu_sel = 1;
+				alu_code = 18;
+				
+			end else if(ins[31:26] == 6'b101011) begin //sw
+			
+				reg_wen = 0;
+				reg_des = 1;
+				dmem_alu = 1;
+				mem_wen = 1;
+				alu_sel = 1;
+				alu_code = 19;
+				
+			end else if(ins[31:26] == 6'b001111) begin //lui
+			
+				reg_wen = 1;
+				reg_des = 1;
+				dmem_alu = 0;
+				mem_wen = 0;
+				alu_sel = 1;
+				alu_code = 20;
+				
+			end else if(ins[31:26] == 6'b000010) begin //j
+				
+			
+			else begin
+				
+				
+					reg_wen = 0;
+					mem_wen = 0;
+					alu_code = 12;
+		
+			end
+				
+		
+		end else begin
+		
+			reg_wen = 0;
+>>>>>>> Stashed changes
 			
 		end
 
