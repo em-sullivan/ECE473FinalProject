@@ -17,7 +17,8 @@ module regfile(
 	
 	output reg [31:0] dout1,
 	output reg [31:0] dout2,
-	output reg [31:0] dout_debug);
+	output reg [31:0] dout_debug,
+	output reg[31:0] ra_out);
 	
 	integer i;
 	reg [31:0] register[31:0]; //Internal registers
@@ -29,6 +30,10 @@ module regfile(
 			register[i] = 0;
 			
 		end
+			
+			register[28] = 32'h10008000;
+			register[29] = 32'h7fffeffc;
+			
 		
 	end
 	
@@ -40,6 +45,9 @@ module regfile(
 				register[i] = 0;
 				
 			end
+			
+			register[28] = 32'h10008000;
+			register[29] = 32'h7fffeffc;
 			
 		end
 		
@@ -61,6 +69,7 @@ module regfile(
 	
 		dout1 <= register[radd1]; //Which register is read from is based on read-in adresses
 		dout2 <= register[radd2];
+		ra_out <= register[31];
 	
 	end
 	

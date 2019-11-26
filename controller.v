@@ -1,3 +1,7 @@
+// Eric Sullivan and Elizabeth Williard
+// 10/30/2019
+// Controller module
+
 module controller (
 
 	input [31:0] ins,
@@ -191,12 +195,16 @@ module controller (
 				alu_code = 12;
 				jump = 1;
 				
-			end else begin
+			end else begin // used for the branch instructions
 					
 				reg_wen = 0;
+				reg_des = 0;
+				dmem_alu = 0;
 				mem_wen = 0;
+				alu_sel = 0;
 				alu_code = 12;
-		
+				jump = 0;
+				
 			end
 			
 				

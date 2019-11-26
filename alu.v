@@ -64,11 +64,11 @@ module alu(
 			
 				if (reg1 < reg2) begin
 					
-					result = 0;
+					result = 1;
 					
 				end else begin
 				
-					result = 1;
+					result = 0;
 				end
 				
 			

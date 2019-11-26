@@ -19,7 +19,7 @@ module programCounter(
 	
 		if(rst == 1'b1) begin
 		
-			pc_out <= 0;
+			pc_out <= 32'h00400000;
 			
 		end
 		

@@ -56,11 +56,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "key[0]",
+					"name" : "CLOCK_50",
 					"strict" : false
 				},
 				{
 					"name" : "key[1]",
+					"strict" : false
+				},
+				{
+					"name" : "key[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[1]",
 					"strict" : false
 				}
 			]

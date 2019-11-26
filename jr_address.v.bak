@@ -1,0 +1,32 @@
+module jr_address(
+
+	input [31:0] id_ex_data1,
+	input [31:0] ex_mem_rs,
+	input [31:0] mem_wb_rs,
+	
+	input [4:0] id_ex_regd,
+	input [4:0] ex_mem_regd,
+	input [4:0] mem_wb_regd,
+	
+	output reg [31:0] jr_addr);
+	
+	always @* begin
+	
+		jr_addr = id_ex_data1;
+		
+		if(id_ex_regd == ex_mem_regd) begin
+		
+			jr_addr = ex_mem_rs;
+			
+		end
+		
+		else if (od_ex_regd == mem_wb_regd) begin
+		
+			jr_addr = mem_wb_rs;
+		
+		end
+	
+	end
+	
+endmodule
+	

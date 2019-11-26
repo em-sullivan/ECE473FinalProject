@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Tue Nov 19 10:25:47 2019
+Analysis & Synthesis Status : Successful - Thu Nov 21 22:10:28 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : pipeline_project
 Top-level Entity Name : pipeline_project
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 1983
-Total pins : 17
+Total registers : 2025
+Total pins : 19
 Total virtual pins : 0
 Total block memory bits : 311,296
 Total DSP Blocks : 1

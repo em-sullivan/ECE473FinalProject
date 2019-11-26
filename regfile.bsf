@@ -121,6 +121,13 @@ refer to the applicable agreement for further details.
 		(text "dout_debug[31..0]" (rect 150 59 219 71)(font "Arial" ))
 		(line (pt 240 64)(pt 224 64)(line_width 3))
 	)
+	(port
+		(pt 240 80)
+		(output)
+		(text "ra_out[31..0]" (rect 0 0 49 12)(font "Arial" ))
+		(text "ra_out[31..0]" (rect 170 75 219 87)(font "Arial" ))
+		(line (pt 240 80)(pt 224 80)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 224 224)(line_width 1))
 	)
