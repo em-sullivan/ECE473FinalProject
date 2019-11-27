@@ -2,7 +2,7 @@
 // 11/11/2019
 // Branch controller
 
-module branch_controller(
+	module branch_controller(
 
 	input [31:0] pc,
 	input [31:0] if_id_ins,

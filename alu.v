@@ -62,7 +62,7 @@ module alu(
 			
 			7: begin //slt
 			
-				if (reg1 < reg2) begin
+				if ($signed(reg1) < $signed(reg2)) begin
 					
 					result = 1;
 					

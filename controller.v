@@ -19,6 +19,7 @@ module controller (
 	
 		if (ins[31:26] == 6'b000000) begin //If op-code is 0, r type instructions
 			
+			
 			reg_wen = 1;
 			reg_des = 0; //rd
 			dmem_alu = 0; //alu result

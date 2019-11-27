@@ -32,7 +32,7 @@ module regfile(
 		end
 			
 			register[28] = 32'h10008000;
-			register[29] = 32'h7fffeffc;
+			register[29] = 32'h000000FF;
 			
 		
 	end
@@ -47,7 +47,7 @@ module regfile(
 			end
 			
 			register[28] = 32'h10008000;
-			register[29] = 32'h7fffeffc;
+			register[29] = 32'h000000ff;
 			
 		end
 		
