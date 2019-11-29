@@ -14,7 +14,7 @@ module hazard_control(
 		
 		if(if_id_ins[31:26] == 6'b100011) begin //If instruction was lw
 		
-			if (ins[31:26] == 0) begin
+			/*if (ins[31:26] == 0) begin
 			
 				if(ins[25:21] == if_id_ins[20:16] || ins[20:16] == if_id_ins[20:16]) begin
 				
@@ -26,7 +26,17 @@ module hazard_control(
 			
 				stall = 1;
 				
-			end
+			end */
+			
+			if((ins[25:21] == if_id_ins[20:16]) || (ins[20:16] == if_id_ins[20:16]))
+				
+				stall = 1;
+			
+		end
+		
+		if ((if_id_ins[31:26] == 6'b000100) || (if_id_ins[31:26] == 6'b000101) || (if_id_ins[31:26] == 6'b000111) || (if_id_ins[31:26] == 6'b000001)) begin
+					
+			stall = 1;
 			
 		end
 		

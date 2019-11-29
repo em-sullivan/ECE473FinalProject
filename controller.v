@@ -196,7 +196,48 @@ module controller (
 				alu_code = 12;
 				jump = 1;
 				
-			end else begin // used for the branch instructions
+			end else if (ins[31:26] == 6'b000100) begin //beq
+			
+				reg_wen = 0;
+				reg_des = 0;
+				dmem_alu = 0;
+				mem_wen = 0;
+				alu_sel = 0;
+				alu_code = 21;
+				jump = 0;
+				
+			end else if (ins[31:26] == 6'b000101) begin //bne
+			
+				reg_wen = 0;
+				reg_des = 0;
+				dmem_alu = 0;
+				mem_wen = 0;
+				alu_sel = 0;
+				alu_code = 22;
+				jump = 0;
+				
+			end else if (ins[31:26] == 6'b000111) begin //bgtz
+			
+				reg_wen = 0;
+				reg_des = 0;
+				dmem_alu = 0;
+				mem_wen = 0;
+				alu_sel = 0;
+				alu_code = 23;
+				jump = 0;
+				
+			end else if (ins[31:26] == 6'b000001) begin //bgez
+			
+				reg_wen = 0;
+				reg_des = 0;
+				dmem_alu = 0;
+				mem_wen = 0;
+				alu_sel = 0;
+				alu_code = 24;
+				jump = 0;
+				
+				
+			end else begin 
 					
 				reg_wen = 0;
 				reg_des = 0;

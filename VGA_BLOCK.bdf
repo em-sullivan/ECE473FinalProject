@@ -1240,5 +1240,5 @@ refer to the applicable agreement for further details.
 (junction (pt 368 232))
 (junction (pt 112 352))
 (text "`" (rect 712 352 719 371)(font "Intel Clear" (font_size 8)))
-(text "Character numbers have to be set here" (rect 488 344 935 373)(font "Intel Clear" (font_size 16)(bold)))
+(text "Character numbers have to be set here" (rect 488 336 935 365)(font "Intel Clear" (font_size 16)(bold)))
 (text "Double Click To Edit the Parameters" (rect 488 320 906 349)(font "Intel Clear" (font_size 16)(bold)))

@@ -21,7 +21,8 @@ module fowarding_unit(
 			
 		end 
 		
-		if((mem_wb_wen == 1'b1) && (mem_wb_rd == rs_in) && (mem_wb_rd != 0) && !((ex_mem_wen == 1'b1) && (ex_mem_rd == rs_in) && (ex_mem_rd != 0))) begin
+		if((mem_wb_wen == 1'b1) && (mem_wb_rd == rs_in) && (mem_wb_rd != 0) && !((ex_mem_wen == 1'b1) && (ex_mem_rd == rs_in))) begin
+			
 			mux_rs = 2'b10;
 			
 		end
@@ -32,7 +33,7 @@ module fowarding_unit(
 			
 		end 
 		
-		if ( (mem_wb_wen == 1'b1) && (mem_wb_rd == rt_in) && (mem_wb_rd != 0) && !((ex_mem_wen == 1'b1) && (ex_mem_rd == rt_in) && (ex_mem_rd != 0))) begin
+		if ( (mem_wb_wen == 1'b1) && (mem_wb_rd == rt_in) && (mem_wb_rd != 0) && !((ex_mem_wen == 1'b1) && (ex_mem_rd == rt_in))) begin
 		
 			mux_rt = 2'b10;
 			

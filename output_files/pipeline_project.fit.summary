@@ -1,12 +1,12 @@
-Fitter Status : Successful - Wed Nov 27 18:23:00 2019
+Fitter Status : Successful - Fri Nov 29 16:10:37 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : pipeline_project
 Top-level Entity Name : pipeline_project
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 2,922 / 18,480 ( 16 % )
-Total registers : 2091
+Logic utilization (in ALMs) : 2,766 / 18,480 ( 15 % )
+Total registers : 2121
 Total pins : 19 / 224 ( 8 % )
 Total virtual pins : 0
 Total block memory bits : 311,296 / 3,153,920 ( 10 % )

@@ -78,17 +78,17 @@ module char_engine(
 
 
 	//Set and Forget stuff
-	reg [((yourname_chars*8)-1):0] yourname = "YOUR NAME";	//put your name in " "
+	reg [((yourname_chars*8)-1):0] yourname = "ERIC S   ";	//put your name in " "
 	parameter yourname_chars = 9;										//# of characters, including spaces/other punct.
 	
-	reg [(partname_chars*8):0] partname = "PARTNER NAME";		//partners name in " "
+	reg [(partname_chars*8):0] partname = "ELIZABETH W ";		//partners name in " "
 	parameter partname_chars = 12;									//# of characters, including spaces/other punct.
 	
 	reg [7:0] group_num = "1";											//Enter your group number here
 	
 	//keep these numbers at one character, use hex digit for >9
 	//Change for each milestone/test stuff
-	reg [7:0] milestone_num = "1";									//Enter the Miletsone Number here, in " "
+	reg [7:0] milestone_num = "4";									//Enter the Miletsone Number here, in " "
 	reg [7:0] test_num = 	  "1";									//Enter the test number here in " "
 	
 	
@@ -100,10 +100,10 @@ module char_engine(
 -------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------*/
 
-	reg [(gpx00_chars*8):0] gpx00_label = "GP REGISTER 00";				//put label in " "
+	reg [(gpx00_chars*8):0] gpx00_label = "PC COUNTER    ";				//put label in " "
 	parameter gpx00_chars = 14;													//# of characters, including spaces/other punct.
 	
-	reg [(gpx01_chars*8):0] gpx01_label = "GP REGISTER 01";				//put label in " "
+	reg [(gpx01_chars*8):0] gpx01_label = "INSTRUCTION   ";				//put label in " "
 	parameter gpx01_chars = 14;													//# of characters, including spaces/other punct.
 	
 	reg [(gpx02_chars*8):0] gpx02_label = "GP REGISTER 02";				//put label in " "

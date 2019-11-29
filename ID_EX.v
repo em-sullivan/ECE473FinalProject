@@ -32,14 +32,15 @@ module ID_EX (
 	input jr_in,
 	input alu_sel_in,
 	input [4:0] alu_code_in,
-	
+	input [31:0] pc_in,
 	output reg reg_wen_out,
 	output reg reg_des_out,
 	output reg dmem_alu_out,
 	output reg mem_wen_out,
 	output reg jr_out,
 	output reg alu_sel_out,
-	output reg [4:0] alu_code_out);
+	output reg [4:0] alu_code_out,
+	output reg [31:0] pc_out);
 	
 	
 	initial begin
@@ -63,6 +64,7 @@ module ID_EX (
 		jr_out = 0;
 		alu_sel_out = 0;
 		alu_code_out = 0;
+		pc_out = 0;
 		
 	end
 	
@@ -89,6 +91,7 @@ module ID_EX (
 			jr_out <= 0;
 			alu_sel_out <= 0;
 			alu_code_out <= 0;
+			pc_out <= 0;
 			
 		end
 		
@@ -113,6 +116,7 @@ module ID_EX (
 			jr_out <= jr_in;
 			alu_sel_out <= alu_sel_in;
 			alu_code_out <= alu_code_in;
+			pc_out <= pc_in;
 			
 		end
 		
