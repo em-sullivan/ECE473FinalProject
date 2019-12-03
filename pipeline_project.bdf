@@ -2209,9 +2209,9 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -464 680 -208 880)
-	(text "ins_meme" (rect 91 0 161 16)(font "Arial" (font_size 10)))
-	(text "inst1" (rect 8 184 31 196)(font "Arial" ))
+	(rect 3792 800 4048 1000)
+	(text "data_memer" (rect 83 0 167 16)(font "Arial" (font_size 10)))
+	(text "inst2" (rect 8 184 31 196)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -2351,9 +2351,9 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 3792 800 4048 1000)
-	(text "data_memer" (rect 83 0 167 16)(font "Arial" (font_size 10)))
-	(text "inst2" (rect 8 184 31 196)(font "Arial" ))
+	(rect -464 680 -208 880)
+	(text "ins_meme" (rect 91 0 161 16)(font "Arial" (font_size 10)))
+	(text "inst1" (rect 8 184 31 196)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)

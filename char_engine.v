@@ -89,7 +89,7 @@ module char_engine(
 	//keep these numbers at one character, use hex digit for >9
 	//Change for each milestone/test stuff
 	reg [7:0] milestone_num = "4";									//Enter the Miletsone Number here, in " "
-	reg [7:0] test_num = 	  "1";									//Enter the test number here in " "
+	reg [7:0] test_num = 	  "9";									//Enter the test number here in " "
 	
 	
 /*------------------------------------------------------------------------------------------------
@@ -100,7 +100,7 @@ module char_engine(
 -------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------*/
 
-	reg [(gpx00_chars*8):0] gpx00_label = "PC COUNTER    ";				//put label in " "
+	reg [(gpx00_chars*8):0] gpx00_label = "PC            ";				//put label in " "
 	parameter gpx00_chars = 14;													//# of characters, including spaces/other punct.
 	
 	reg [(gpx01_chars*8):0] gpx01_label = "INSTRUCTION   ";				//put label in " "
