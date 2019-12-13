@@ -1133,7 +1133,7 @@ refer to the applicable agreement for further details.
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(parameter
 		"color_1"
-		"111110111111"
+		"111111111111"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing

@@ -100,7 +100,11 @@ endmodule
 // Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
 // Retrieval info: PRIVATE: MEMSIZE NUMERIC "2048"
 // Retrieval info: PRIVATE: MEM_IN_BITS NUMERIC "0"
+<<<<<<< Updated upstream
 // Retrieval info: PRIVATE: MIFfilename STRING "../Lab 6/data_mem.mif"
+=======
+// Retrieval info: PRIVATE: MIFfilename STRING "./Milestone-4-Test-Programs/Test02-Multiply-Data-test.mif"
+>>>>>>> Stashed changes
 // Retrieval info: PRIVATE: OPERATION_MODE NUMERIC "3"
 // Retrieval info: PRIVATE: OUTDATA_ACLR_B NUMERIC "0"
 // Retrieval info: PRIVATE: OUTDATA_REG_B NUMERIC "0"
@@ -134,7 +138,11 @@ endmodule
 // Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_A STRING "BYPASS"
 // Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_B STRING "BYPASS"
 // Retrieval info: CONSTANT: INDATA_REG_B STRING "CLOCK1"
+<<<<<<< Updated upstream
 // Retrieval info: CONSTANT: INIT_FILE STRING "../Lab 6/data_mem.mif"
+=======
+// Retrieval info: CONSTANT: INIT_FILE STRING "./Milestone-4-Test-Programs/Test02-Multiply-Data-test.mif"
+>>>>>>> Stashed changes
 // Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Cyclone V"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"
 // Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "64"

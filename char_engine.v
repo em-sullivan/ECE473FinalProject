@@ -88,8 +88,13 @@ module char_engine(
 	
 	//keep these numbers at one character, use hex digit for >9
 	//Change for each milestone/test stuff
+<<<<<<< Updated upstream
 	reg [7:0] milestone_num = "1";									//Enter the Miletsone Number here, in " "
 	reg [7:0] test_num = 	  "1";									//Enter the test number here in " "
+=======
+	reg [7:0] milestone_num = "4";									//Enter the Miletsone Number here, in " "
+	reg [7:0] test_num = 	  "3";									//Enter the test number here in " "
+>>>>>>> Stashed changes
 	
 	
 /*------------------------------------------------------------------------------------------------

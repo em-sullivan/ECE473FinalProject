@@ -1,5 +1,9 @@
 Analysis & Synthesis report for pipeline_project
+<<<<<<< Updated upstream
 Sat Nov 02 11:42:01 2019
+=======
+Fri Dec 13 16:15:25 2019
+>>>>>>> Stashed changes
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,6 +14,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
+<<<<<<< Updated upstream
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
@@ -40,6 +45,32 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  32. Elapsed Time Per Partition
  33. Analysis & Synthesis Messages
  34. Analysis & Synthesis Suppressed Messages
+=======
+  5. Analysis & Synthesis IP Cores Summary
+  6. Source assignments for VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated
+  7. Source assignments for ins_meme:inst1|altsyncram:altsyncram_component|altsyncram_mvp2:auto_generated
+  8. Source assignments for data_memer:inst2|altsyncram:altsyncram_component|altsyncram_qtp2:auto_generated
+  9. Parameter Settings for User Entity Instance: VGA_BLOCK:inst|vga_control:inst2
+ 10. Parameter Settings for User Entity Instance: VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i
+ 11. Parameter Settings for User Entity Instance: VGA_BLOCK:inst|char_engine:inst
+ 12. Parameter Settings for User Entity Instance: VGA_BLOCK:inst|color_encoder:inst1
+ 13. Parameter Settings for User Entity Instance: VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component
+ 14. Parameter Settings for User Entity Instance: clk_select:inst32|lpm_mux:LPM_MUX_component
+ 15. Parameter Settings for User Entity Instance: jr_mux:inst101|lpm_mux:LPM_MUX_component
+ 16. Parameter Settings for User Entity Instance: stall:inst23|lpm_mux:LPM_MUX_component
+ 17. Parameter Settings for User Entity Instance: ins_meme:inst1|altsyncram:altsyncram_component
+ 18. Parameter Settings for User Entity Instance: rs_foward:inst16|lpm_mux:LPM_MUX_component
+ 19. Parameter Settings for User Entity Instance: dmem_alu:inst7|lpm_mux:LPM_MUX_component
+ 20. Parameter Settings for User Entity Instance: imm_mux:inst20|lpm_mux:LPM_MUX_component
+ 21. Parameter Settings for User Entity Instance: rt_foward:inst17|lpm_mux:LPM_MUX_component
+ 22. Parameter Settings for User Entity Instance: req_ds_mux:inst15|lpm_mux:LPM_MUX_component
+ 23. Parameter Settings for User Entity Instance: data_memer:inst2|altsyncram:altsyncram_component
+ 24. Parameter Settings for User Entity Instance: pc_stall:inst24|lpm_mux:LPM_MUX_component
+ 25. Parameter Settings for User Entity Instance: pc_branch:inst26|lpm_mux:LPM_MUX_component
+ 26. Parameter Settings for User Entity Instance: jump_mux:inst29|lpm_mux:LPM_MUX_component
+ 27. Analysis & Synthesis Messages
+ 28. Analysis & Synthesis Suppressed Messages
+>>>>>>> Stashed changes
 
 
 
@@ -62,6 +93,7 @@ refer to the applicable agreement for further details.
 
 
 
+<<<<<<< Updated upstream
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
@@ -83,6 +115,24 @@ refer to the applicable agreement for further details.
 ; Total PLLs                      ; 1                                           ;
 ; Total DLLs                      ; 0                                           ;
 +---------------------------------+---------------------------------------------+
+=======
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Fri Dec 13 16:15:25 2019           ;
+; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name               ; pipeline_project                            ;
+; Top-level Entity Name       ; pipeline_project                            ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
+>>>>>>> Stashed changes
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -177,8 +227,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 2           ;
@@ -189,6 +239,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
+<<<<<<< Updated upstream
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
 +----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------+---------+
@@ -335,6 +386,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+-------------+
 
 
+=======
+>>>>>>> Stashed changes
 +-----------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis IP Cores Summary                                                                                 ;
 +--------+--------------+---------+--------------+--------------+-------------------------------------+-----------------+
@@ -348,6 +401,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+-------------------------------------+-----------------+
 
 
+<<<<<<< Updated upstream
 +--------------------------------------------------------------------------------------------------------------+
 ; User-Specified and Inferred Latches                                                                          ;
 +-----------------------------------------------------+-------------------------------+------------------------+
@@ -1289,6 +1343,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
 
 
+=======
+>>>>>>> Stashed changes
 +-----------------------------------------------------------------------------------------------------------------+
 ; Source assignments for VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated ;
 +---------------------------------+--------------------+------+---------------------------------------------------+
@@ -1299,7 +1355,11 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +------------------------------------------------------------------------------------------------------+
+<<<<<<< Updated upstream
 ; Source assignments for ins_meme:inst1|altsyncram:altsyncram_component|altsyncram_5en2:auto_generated ;
+=======
+; Source assignments for ins_meme:inst1|altsyncram:altsyncram_component|altsyncram_mvp2:auto_generated ;
+>>>>>>> Stashed changes
 +---------------------------------+--------------------+------+----------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                     ;
 +---------------------------------+--------------------+------+----------------------------------------+
@@ -1308,7 +1368,11 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +--------------------------------------------------------------------------------------------------------+
+<<<<<<< Updated upstream
 ; Source assignments for data_memer:inst2|altsyncram:altsyncram_component|altsyncram_cbm2:auto_generated ;
+=======
+; Source assignments for data_memer:inst2|altsyncram:altsyncram_component|altsyncram_qtp2:auto_generated ;
+>>>>>>> Stashed changes
 +---------------------------------+--------------------+------+------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                       ;
 +---------------------------------+--------------------+------+------------------------------------------+
@@ -1620,7 +1684,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Parameter Name ; Value        ; Type                                            ;
 +----------------+--------------+-------------------------------------------------+
 ; color_0        ; 000000000000 ; Unsigned Binary                                 ;
-; color_1        ; 111110111111 ; Unsigned Binary                                 ;
+; color_1        ; 111111111111 ; Unsigned Binary                                 ;
 +----------------+--------------+-------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1705,6 +1769,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
+<<<<<<< Updated upstream
 +---------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: ins_meme:inst1|altsyncram:altsyncram_component ;
 +------------------------------------+----------------------------------+---------------------+
@@ -1763,6 +1828,104 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEVICE_FAMILY                      ; Cyclone V                        ; Untyped             ;
 ; CBXI_PARAMETER                     ; altsyncram_5en2                  ; Untyped             ;
 +------------------------------------+----------------------------------+---------------------+
+=======
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: stall:inst23|lpm_mux:LPM_MUX_component ;
++------------------------+-----------+------------------------------------------------+
+; Parameter Name         ; Value     ; Type                                           ;
++------------------------+-----------+------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE                                 ;
+; LPM_WIDTH              ; 32        ; Signed Integer                                 ;
+; LPM_SIZE               ; 2         ; Signed Integer                                 ;
+; LPM_WIDTHS             ; 1         ; Signed Integer                                 ;
+; LPM_PIPELINE           ; 0         ; Untyped                                        ;
+; CBXI_PARAMETER         ; mux_dlc   ; Untyped                                        ;
+; DEVICE_FAMILY          ; Cyclone V ; Untyped                                        ;
++------------------------+-----------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ins_meme:inst1|altsyncram:altsyncram_component                        ;
++------------------------------------+--------------------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                                        ; Type           ;
++------------------------------------+--------------------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                            ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                                           ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                                          ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                                           ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                                          ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                                            ; Untyped        ;
+; OPERATION_MODE                     ; BIDIR_DUAL_PORT                                              ; Untyped        ;
+; WIDTH_A                            ; 32                                                           ; Signed Integer ;
+; WIDTHAD_A                          ; 6                                                            ; Signed Integer ;
+; NUMWORDS_A                         ; 64                                                           ; Signed Integer ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                                 ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                                         ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                                         ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                                         ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                                         ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                                         ; Untyped        ;
+; WIDTH_B                            ; 32                                                           ; Signed Integer ;
+; WIDTHAD_B                          ; 6                                                            ; Signed Integer ;
+; NUMWORDS_B                         ; 64                                                           ; Signed Integer ;
+; INDATA_REG_B                       ; CLOCK1                                                       ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                       ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                                       ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                                       ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                                 ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                                       ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                                         ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                                         ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                                         ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                                         ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                                         ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                                         ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                                            ; Signed Integer ;
+; WIDTH_BYTEENA_B                    ; 1                                                            ; Signed Integer ;
+; RAM_BLOCK_TYPE                     ; AUTO                                                         ; Untyped        ;
+; BYTE_SIZE                          ; 8                                                            ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                    ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                         ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                         ; Untyped        ;
+; INIT_FILE                          ; ../../Milestone-4-Test-Programs/Test09-Fibonacci-Codenew.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                                       ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                                            ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                                                       ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS                                                       ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                                       ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                                                       ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                              ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                              ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                                        ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                        ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                                            ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone V                                                    ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_mvp2                                              ; Untyped        ;
++------------------------------------+--------------------------------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rs_foward:inst16|lpm_mux:LPM_MUX_component ;
++------------------------+-----------+----------------------------------------------------+
+; Parameter Name         ; Value     ; Type                                               ;
++------------------------+-----------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 32        ; Signed Integer                                     ;
+; LPM_SIZE               ; 3         ; Signed Integer                                     ;
+; LPM_WIDTHS             ; 2         ; Signed Integer                                     ;
+; LPM_PIPELINE           ; 0         ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_flc   ; Untyped                                            ;
+; DEVICE_FAMILY          ; Cyclone V ; Untyped                                            ;
++------------------------+-----------+----------------------------------------------------+
+>>>>>>> Stashed changes
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1804,6 +1967,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
+<<<<<<< Updated upstream
 +-----------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: data_memer:inst2|altsyncram:altsyncram_component ;
 +------------------------------------+-----------------------+----------------------------------+
@@ -1959,88 +2123,255 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 
 
+=======
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: data_memer:inst2|altsyncram:altsyncram_component                   ;
++------------------------------------+-----------------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                                     ; Type           ;
++------------------------------------+-----------------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                         ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                                        ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                                       ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                                        ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                                       ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                                         ; Untyped        ;
+; OPERATION_MODE                     ; BIDIR_DUAL_PORT                                           ; Untyped        ;
+; WIDTH_A                            ; 32                                                        ; Signed Integer ;
+; WIDTHAD_A                          ; 6                                                         ; Signed Integer ;
+; NUMWORDS_A                         ; 64                                                        ; Signed Integer ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                              ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                                      ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                                      ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                                      ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                                      ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                                      ; Untyped        ;
+; WIDTH_B                            ; 32                                                        ; Signed Integer ;
+; WIDTHAD_B                          ; 6                                                         ; Signed Integer ;
+; NUMWORDS_B                         ; 64                                                        ; Signed Integer ;
+; INDATA_REG_B                       ; CLOCK1                                                    ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                    ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                                    ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                                    ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                              ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                                    ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                                      ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                                      ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                                      ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                                      ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                                      ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                                      ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                                         ; Signed Integer ;
+; WIDTH_BYTEENA_B                    ; 1                                                         ; Signed Integer ;
+; RAM_BLOCK_TYPE                     ; AUTO                                                      ; Untyped        ;
+; BYTE_SIZE                          ; 8                                                         ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                 ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                      ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                      ; Untyped        ;
+; INIT_FILE                          ; ./Milestone-4-Test-Programs/Test02-Multiply-Data-test.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                                    ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                                         ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                                                    ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS                                                    ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                                    ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                                                    ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                           ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                           ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                                     ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                     ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                                         ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone V                                                 ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_qtp2                                           ; Untyped        ;
++------------------------------------+-----------------------------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pc_stall:inst24|lpm_mux:LPM_MUX_component ;
++------------------------+-----------+---------------------------------------------------+
+; Parameter Name         ; Value     ; Type                                              ;
++------------------------+-----------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 32        ; Signed Integer                                    ;
+; LPM_SIZE               ; 2         ; Signed Integer                                    ;
+; LPM_WIDTHS             ; 1         ; Signed Integer                                    ;
+; LPM_PIPELINE           ; 0         ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_dlc   ; Untyped                                           ;
+; DEVICE_FAMILY          ; Cyclone V ; Untyped                                           ;
++------------------------+-----------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pc_branch:inst26|lpm_mux:LPM_MUX_component ;
++------------------------+-----------+----------------------------------------------------+
+; Parameter Name         ; Value     ; Type                                               ;
++------------------------+-----------+----------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY                                         ;
+; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY                                       ;
+; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE                                       ;
+; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE                                     ;
+; LPM_WIDTH              ; 32        ; Signed Integer                                     ;
+; LPM_SIZE               ; 2         ; Signed Integer                                     ;
+; LPM_WIDTHS             ; 1         ; Signed Integer                                     ;
+; LPM_PIPELINE           ; 0         ; Untyped                                            ;
+; CBXI_PARAMETER         ; mux_dlc   ; Untyped                                            ;
+; DEVICE_FAMILY          ; Cyclone V ; Untyped                                            ;
++------------------------+-----------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: jump_mux:inst29|lpm_mux:LPM_MUX_component ;
++------------------------+-----------+---------------------------------------------------+
+; Parameter Name         ; Value     ; Type                                              ;
++------------------------+-----------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE                                    ;
+; LPM_WIDTH              ; 32        ; Signed Integer                                    ;
+; LPM_SIZE               ; 2         ; Signed Integer                                    ;
+; LPM_WIDTHS             ; 1         ; Signed Integer                                    ;
+; LPM_PIPELINE           ; 0         ; Untyped                                           ;
+; CBXI_PARAMETER         ; mux_dlc   ; Untyped                                           ;
+; DEVICE_FAMILY          ; Cyclone V ; Untyped                                           ;
++------------------------+-----------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
+>>>>>>> Stashed changes
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+<<<<<<< Updated upstream
     Info: Processing started: Sat Nov 02 11:41:24 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline_project -c pipeline_project
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+=======
+    Info: Processing started: Fri Dec 13 16:15:12 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline_project -c pipeline_project
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file id_ex_fwd.v
+    Info (12023): Found entity 1: ID_EX_fwd File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ID_EX_fwd.v Line: 1
+>>>>>>> Stashed changes
 Info (12021): Found 1 design units, including 1 entities, in source file vram.v
-    Info (12023): Found entity 1: vram File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vram.v Line: 40
+    Info (12023): Found entity 1: vram File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/vram.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file vgaclk_0002.v
-    Info (12023): Found entity 1: vgaclk_0002 File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vgaclk_0002.v Line: 2
+    Info (12023): Found entity 1: vgaclk_0002 File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/vgaclk_0002.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file vgaclk.v
-    Info (12023): Found entity 1: vgaclk File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vgaclk.v Line: 8
+    Info (12023): Found entity 1: vgaclk File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/vgaclk.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file vga_control.v
-    Info (12023): Found entity 1: vga_control File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vga_control.v Line: 11
+    Info (12023): Found entity 1: vga_control File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/vga_control.v Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file vga_block.bdf
     Info (12023): Found entity 1: VGA_BLOCK
 Info (12021): Found 1 design units, including 1 entities, in source file regfile.v
-    Info (12023): Found entity 1: regfile File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/regfile.v Line: 5
+    Info (12023): Found entity 1: regfile File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/regfile.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file programcounter.v
-    Info (12023): Found entity 1: programCounter File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/programCounter.v Line: 5
+    Info (12023): Found entity 1: programCounter File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/programCounter.v Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file onepulse.vhd
-    Info (12022): Found design unit 1: onepulse-a File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/onepulse.vhd Line: 6
-    Info (12023): Found entity 1: onepulse File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/onepulse.vhd Line: 3
+    Info (12022): Found design unit 1: onepulse-a File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/onepulse.vhd Line: 6
+    Info (12023): Found entity 1: onepulse File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/onepulse.vhd Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file mem_wb.v
-    Info (12023): Found entity 1: MEM_WB File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/MEM_WB.v Line: 5
+    Info (12023): Found entity 1: MEM_WB File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/MEM_WB.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file lab_6.bdf
     Info (12023): Found entity 1: Lab_6
 Info (12021): Found 1 design units, including 1 entities, in source file lab_5.bdf
     Info (12023): Found entity 1: Lab_5
 Info (12021): Found 1 design units, including 1 entities, in source file if_id.v
-    Info (12023): Found entity 1: IF_ID File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/IF_ID.v Line: 5
+    Info (12023): Found entity 1: IF_ID File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/IF_ID.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file id_ex.v
-    Info (12023): Found entity 1: ID_EX File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/ID_EX.v Line: 5
+    Info (12023): Found entity 1: ID_EX File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ID_EX.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file ex_mem.v
-    Info (12023): Found entity 1: EX_MEM File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/EX_MEM.v Line: 5
+    Info (12023): Found entity 1: EX_MEM File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/EX_MEM.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file color_encoder.v
-    Info (12023): Found entity 1: color_encoder File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/color_encoder.v Line: 5
+    Info (12023): Found entity 1: color_encoder File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/color_encoder.v Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file clk_div.vhd
-    Info (12022): Found design unit 1: clk_div-a File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/CLK_DIV.VHD Line: 21
-    Info (12023): Found entity 1: clk_div File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/CLK_DIV.VHD Line: 6
+    Info (12022): Found design unit 1: clk_div-a File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/CLK_DIV.VHD Line: 21
+    Info (12023): Found entity 1: clk_div File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/CLK_DIV.VHD Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file char_engine.v
-    Info (12023): Found entity 1: char_engine File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 10
+    Info (12023): Found entity 1: char_engine File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file alu_add.v
-    Info (12023): Found entity 1: ALU_add File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/ALU_add.v Line: 1
+    Info (12023): Found entity 1: ALU_add File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ALU_add.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file add4.v
-    Info (12023): Found entity 1: add4 File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/add4.v Line: 1
+    Info (12023): Found entity 1: add4 File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/add4.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pipeline_project.bdf
     Info (12023): Found entity 1: pipeline_project
 Info (12021): Found 1 design units, including 1 entities, in source file ins_meme.v
-    Info (12023): Found entity 1: ins_meme File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/ins_meme.v Line: 39
+    Info (12023): Found entity 1: ins_meme File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ins_meme.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file data_memer.v
-    Info (12023): Found entity 1: data_memer File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/data_memer.v Line: 39
+    Info (12023): Found entity 1: data_memer File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/data_memer.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file shift_left_two.v
-    Info (12023): Found entity 1: shift_left_two File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/shift_left_two.v Line: 5
+    Info (12023): Found entity 1: shift_left_two File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/shift_left_two.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file sign_extender.v
-    Info (12023): Found entity 1: sign_extender File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/sign_extender.v Line: 5
+    Info (12023): Found entity 1: sign_extender File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/sign_extender.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file fowarding_unit.v
-    Info (12023): Found entity 1: fowarding_unit File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/fowarding_unit.v Line: 1
+    Info (12023): Found entity 1: fowarding_unit File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/fowarding_unit.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file controller.v
+<<<<<<< Updated upstream
     Info (12023): Found entity 1: controller File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/controller.v Line: 1
+=======
+    Info (12023): Found entity 1: controller File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 5
+>>>>>>> Stashed changes
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: alu File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/alu.v Line: 1
+    Info (12023): Found entity 1: alu File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file req_ds_mux.v
-    Info (12023): Found entity 1: req_ds_mux File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/req_ds_mux.v Line: 39
+    Info (12023): Found entity 1: req_ds_mux File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/req_ds_mux.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file dmem_alu.v
-    Info (12023): Found entity 1: dmem_alu File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/dmem_alu.v Line: 39
+    Info (12023): Found entity 1: dmem_alu File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/dmem_alu.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file jr_mux.v
+<<<<<<< Updated upstream
     Info (12023): Found entity 1: jr_mux File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/jr_mux.v Line: 39
+=======
+    Info (12023): Found entity 1: jr_mux File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/jr_mux.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file rs_foward.v
+    Info (12023): Found entity 1: rs_foward File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/rs_foward.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file rt_foward.v
+    Info (12023): Found entity 1: rt_foward File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/rt_foward.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file imm_mux.v
+    Info (12023): Found entity 1: imm_mux File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/imm_mux.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file hazard_control.v
+    Info (12023): Found entity 1: hazard_control File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/hazard_control.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file stall.v
+    Info (12023): Found entity 1: stall File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/stall.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file pc_stall.v
+    Info (12023): Found entity 1: pc_stall File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/pc_stall.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file branch_controller.v
+    Info (12023): Found entity 1: branch_controller File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/branch_controller.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file pc_branch.v
+    Info (12023): Found entity 1: pc_branch File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/pc_branch.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file jump_shift.v
+    Info (12023): Found entity 1: jump_shift File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/jump_shift.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file concat.v
+    Info (12023): Found entity 1: concat File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/concat.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file jump_mux.v
+    Info (12023): Found entity 1: jump_mux File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/jump_mux.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/auto_reset.v
+    Info (12023): Found entity 1: auto_reset File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/output_files/auto_reset.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file clk_select.v
+    Info (12023): Found entity 1: clk_select File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/clk_select.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file jr_address.v
+    Info (12023): Found entity 1: jr_address File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/jr_address.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file branch_controller_v2.v
+    Info (12023): Found entity 1: branch_controller_v2 File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/branch_controller_v2.v Line: 5
+>>>>>>> Stashed changes
 Info (12127): Elaborating entity "pipeline_project" for the top level hierarchy
 Info (12128): Elaborating entity "VGA_BLOCK" for hierarchy "VGA_BLOCK:inst"
 Info (12128): Elaborating entity "vga_control" for hierarchy "VGA_BLOCK:inst|vga_control:inst2"
-Warning (10230): Verilog HDL assignment warning at vga_control.v(63): truncated value with size 32 to match size of target (19) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vga_control.v Line: 63
+Warning (10230): Verilog HDL assignment warning at vga_control.v(63): truncated value with size 32 to match size of target (19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/vga_control.v Line: 63
 Info (12128): Elaborating entity "vgaclk" for hierarchy "VGA_BLOCK:inst|vgaclk:inst4"
-Info (12128): Elaborating entity "vgaclk_0002" for hierarchy "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vgaclk.v Line: 19
-Info (12128): Elaborating entity "altera_pll" for hierarchy "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vgaclk_0002.v Line: 85
+Info (12128): Elaborating entity "vgaclk_0002" for hierarchy "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/vgaclk.v Line: 19
+Info (12128): Elaborating entity "altera_pll" for hierarchy "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/vgaclk_0002.v Line: 85
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vgaclk_0002.v Line: 85
-Info (12133): Instantiated megafunction "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" with the following parameter: File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vgaclk_0002.v Line: 85
+Info (12130): Elaborated megafunction instantiation "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/vgaclk_0002.v Line: 85
+Info (12133): Instantiated megafunction "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002:vgaclk_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/vgaclk_0002.v Line: 85
     Info (12134): Parameter "fractional_vco_multiplier" = "false"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "operation_mode" = "direct"
@@ -2102,50 +2433,50 @@ Info (12133): Instantiated megafunction "VGA_BLOCK:inst|vgaclk:inst4|vgaclk_0002
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
 Info (12128): Elaborating entity "char_engine" for hierarchy "VGA_BLOCK:inst|char_engine:inst"
-Warning (10230): Verilog HDL assignment warning at char_engine.v(273): truncated value with size 32 to match size of target (6) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 273
-Warning (10230): Verilog HDL assignment warning at char_engine.v(274): truncated value with size 32 to match size of target (6) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 274
-Warning (10230): Verilog HDL assignment warning at char_engine.v(275): truncated value with size 32 to match size of target (6) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 275
-Warning (10230): Verilog HDL assignment warning at char_engine.v(276): truncated value with size 32 to match size of target (6) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 276
-Warning (10230): Verilog HDL assignment warning at char_engine.v(278): truncated value with size 32 to match size of target (5) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 278
-Warning (10230): Verilog HDL assignment warning at char_engine.v(288): truncated value with size 88 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 288
-Warning (10230): Verilog HDL assignment warning at char_engine.v(300): truncated value with size 88 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 300
-Warning (10230): Verilog HDL assignment warning at char_engine.v(312): truncated value with size 72 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 312
-Warning (10230): Verilog HDL assignment warning at char_engine.v(325): truncated value with size 80 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 325
-Warning (10230): Verilog HDL assignment warning at char_engine.v(338): truncated value with size 56 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 338
-Warning (10230): Verilog HDL assignment warning at char_engine.v(361): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 361
-Warning (10230): Verilog HDL assignment warning at char_engine.v(372): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 372
-Warning (10230): Verilog HDL assignment warning at char_engine.v(383): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 383
-Warning (10230): Verilog HDL assignment warning at char_engine.v(394): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 394
-Warning (10230): Verilog HDL assignment warning at char_engine.v(405): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 405
-Warning (10230): Verilog HDL assignment warning at char_engine.v(416): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 416
-Warning (10230): Verilog HDL assignment warning at char_engine.v(427): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 427
-Warning (10230): Verilog HDL assignment warning at char_engine.v(438): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 438
-Warning (10230): Verilog HDL assignment warning at char_engine.v(449): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 449
-Warning (10230): Verilog HDL assignment warning at char_engine.v(460): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 460
-Warning (10230): Verilog HDL assignment warning at char_engine.v(471): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 471
-Warning (10230): Verilog HDL assignment warning at char_engine.v(482): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 482
-Warning (10230): Verilog HDL assignment warning at char_engine.v(493): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 493
-Warning (10230): Verilog HDL assignment warning at char_engine.v(504): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 504
-Warning (10230): Verilog HDL assignment warning at char_engine.v(515): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 515
-Warning (10230): Verilog HDL assignment warning at char_engine.v(526): truncated value with size 113 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 526
-Warning (10230): Verilog HDL assignment warning at char_engine.v(583): truncated value with size 72 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 583
-Warning (10230): Verilog HDL assignment warning at char_engine.v(595): truncated value with size 97 to match size of target (8) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 595
-Warning (10230): Verilog HDL assignment warning at char_engine.v(713): truncated value with size 32 to match size of target (5) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 713
-Warning (10230): Verilog HDL assignment warning at char_engine.v(720): truncated value with size 32 to match size of target (5) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 720
-Warning (10762): Verilog HDL Case Statement warning at char_engine.v(281): can't check case statement for completeness because the case expression has too many possible states File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 281
-Warning (10230): Verilog HDL assignment warning at char_engine.v(198): truncated value with size 32 to match size of target (16) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 198
-Warning (10230): Verilog HDL assignment warning at char_engine.v(230): truncated value with size 8 to match size of target (6) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 230
-Warning (10230): Verilog HDL assignment warning at char_engine.v(235): truncated value with size 8 to match size of target (6) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 235
-Warning (10230): Verilog HDL assignment warning at char_engine.v(240): truncated value with size 8 to match size of target (6) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 240
-Warning (10230): Verilog HDL assignment warning at char_engine.v(245): truncated value with size 8 to match size of target (6) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 245
-Warning (10230): Verilog HDL assignment warning at char_engine.v(254): truncated value with size 8 to match size of target (6) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 254
-Warning (10230): Verilog HDL assignment warning at char_engine.v(259): truncated value with size 8 to match size of target (6) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 259
-Warning (10230): Verilog HDL assignment warning at char_engine.v(264): truncated value with size 8 to match size of target (6) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/char_engine.v Line: 264
+Warning (10230): Verilog HDL assignment warning at char_engine.v(273): truncated value with size 32 to match size of target (6) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 273
+Warning (10230): Verilog HDL assignment warning at char_engine.v(274): truncated value with size 32 to match size of target (6) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 274
+Warning (10230): Verilog HDL assignment warning at char_engine.v(275): truncated value with size 32 to match size of target (6) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 275
+Warning (10230): Verilog HDL assignment warning at char_engine.v(276): truncated value with size 32 to match size of target (6) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 276
+Warning (10230): Verilog HDL assignment warning at char_engine.v(278): truncated value with size 32 to match size of target (5) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 278
+Warning (10230): Verilog HDL assignment warning at char_engine.v(288): truncated value with size 88 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 288
+Warning (10230): Verilog HDL assignment warning at char_engine.v(300): truncated value with size 88 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 300
+Warning (10230): Verilog HDL assignment warning at char_engine.v(312): truncated value with size 72 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 312
+Warning (10230): Verilog HDL assignment warning at char_engine.v(325): truncated value with size 80 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 325
+Warning (10230): Verilog HDL assignment warning at char_engine.v(338): truncated value with size 56 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 338
+Warning (10230): Verilog HDL assignment warning at char_engine.v(361): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 361
+Warning (10230): Verilog HDL assignment warning at char_engine.v(372): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 372
+Warning (10230): Verilog HDL assignment warning at char_engine.v(383): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 383
+Warning (10230): Verilog HDL assignment warning at char_engine.v(394): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 394
+Warning (10230): Verilog HDL assignment warning at char_engine.v(405): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 405
+Warning (10230): Verilog HDL assignment warning at char_engine.v(416): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 416
+Warning (10230): Verilog HDL assignment warning at char_engine.v(427): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 427
+Warning (10230): Verilog HDL assignment warning at char_engine.v(438): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 438
+Warning (10230): Verilog HDL assignment warning at char_engine.v(449): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 449
+Warning (10230): Verilog HDL assignment warning at char_engine.v(460): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 460
+Warning (10230): Verilog HDL assignment warning at char_engine.v(471): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 471
+Warning (10230): Verilog HDL assignment warning at char_engine.v(482): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 482
+Warning (10230): Verilog HDL assignment warning at char_engine.v(493): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 493
+Warning (10230): Verilog HDL assignment warning at char_engine.v(504): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 504
+Warning (10230): Verilog HDL assignment warning at char_engine.v(515): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 515
+Warning (10230): Verilog HDL assignment warning at char_engine.v(526): truncated value with size 113 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 526
+Warning (10230): Verilog HDL assignment warning at char_engine.v(583): truncated value with size 72 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 583
+Warning (10230): Verilog HDL assignment warning at char_engine.v(595): truncated value with size 97 to match size of target (8) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 595
+Warning (10230): Verilog HDL assignment warning at char_engine.v(713): truncated value with size 32 to match size of target (5) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 713
+Warning (10230): Verilog HDL assignment warning at char_engine.v(720): truncated value with size 32 to match size of target (5) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 720
+Warning (10762): Verilog HDL Case Statement warning at char_engine.v(281): can't check case statement for completeness because the case expression has too many possible states File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 281
+Warning (10230): Verilog HDL assignment warning at char_engine.v(198): truncated value with size 32 to match size of target (16) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 198
+Warning (10230): Verilog HDL assignment warning at char_engine.v(230): truncated value with size 8 to match size of target (6) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 230
+Warning (10230): Verilog HDL assignment warning at char_engine.v(235): truncated value with size 8 to match size of target (6) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 235
+Warning (10230): Verilog HDL assignment warning at char_engine.v(240): truncated value with size 8 to match size of target (6) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 240
+Warning (10230): Verilog HDL assignment warning at char_engine.v(245): truncated value with size 8 to match size of target (6) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 245
+Warning (10230): Verilog HDL assignment warning at char_engine.v(254): truncated value with size 8 to match size of target (6) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 254
+Warning (10230): Verilog HDL assignment warning at char_engine.v(259): truncated value with size 8 to match size of target (6) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 259
+Warning (10230): Verilog HDL assignment warning at char_engine.v(264): truncated value with size 8 to match size of target (6) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/char_engine.v Line: 264
 Info (12128): Elaborating entity "color_encoder" for hierarchy "VGA_BLOCK:inst|color_encoder:inst1"
 Info (12128): Elaborating entity "vram" for hierarchy "VGA_BLOCK:inst|vram:inst3"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vram.v Line: 98
-Info (12130): Elaborated megafunction instantiation "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vram.v Line: 98
-Info (12133): Instantiated megafunction "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component" with the following parameter: File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/vram.v Line: 98
+Info (12128): Elaborating entity "altsyncram" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/vram.v Line: 98
+Info (12130): Elaborated megafunction instantiation "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/vram.v Line: 98
+Info (12133): Instantiated megafunction "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/vram.v Line: 98
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
@@ -2173,36 +2504,52 @@ Info (12133): Instantiated megafunction "VGA_BLOCK:inst|vram:inst3|altsyncram:al
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1tn2.tdf
-    Info (12023): Found entity 1: altsyncram_1tn2 File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/db/altsyncram_1tn2.tdf Line: 35
+    Info (12023): Found entity 1: altsyncram_1tn2 File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/db/altsyncram_1tn2.tdf Line: 35
 Info (12128): Elaborating entity "altsyncram_1tn2" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_3na.tdf
-    Info (12023): Found entity 1: decode_3na File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/db/decode_3na.tdf Line: 22
-Info (12128): Elaborating entity "decode_3na" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|decode_3na:decode2" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/db/altsyncram_1tn2.tdf Line: 50
+    Info (12023): Found entity 1: decode_3na File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/db/decode_3na.tdf Line: 22
+Info (12128): Elaborating entity "decode_3na" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|decode_3na:decode2" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/db/altsyncram_1tn2.tdf Line: 50
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_s2a.tdf
-    Info (12023): Found entity 1: decode_s2a File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/db/decode_s2a.tdf Line: 22
-Info (12128): Elaborating entity "decode_s2a" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|decode_s2a:rden_decode_a" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/db/altsyncram_1tn2.tdf Line: 52
+    Info (12023): Found entity 1: decode_s2a File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/db/decode_s2a.tdf Line: 22
+Info (12128): Elaborating entity "decode_s2a" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|decode_s2a:rden_decode_a" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/db/altsyncram_1tn2.tdf Line: 52
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_chb.tdf
-    Info (12023): Found entity 1: mux_chb File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/db/mux_chb.tdf Line: 22
-Info (12128): Elaborating entity "mux_chb" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|mux_chb:mux4" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/db/altsyncram_1tn2.tdf Line: 54
+    Info (12023): Found entity 1: mux_chb File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/db/mux_chb.tdf Line: 22
+Info (12128): Elaborating entity "mux_chb" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|mux_chb:mux4" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/db/altsyncram_1tn2.tdf Line: 54
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_jhb.tdf
-    Info (12023): Found entity 1: mux_jhb File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/db/mux_jhb.tdf Line: 22
-Info (12128): Elaborating entity "mux_jhb" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|mux_jhb:mux5" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/db/altsyncram_1tn2.tdf Line: 55
+    Info (12023): Found entity 1: mux_jhb File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/db/mux_jhb.tdf Line: 22
+Info (12128): Elaborating entity "mux_jhb" for hierarchy "VGA_BLOCK:inst|vram:inst3|altsyncram:altsyncram_component|altsyncram_1tn2:auto_generated|mux_jhb:mux5" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/db/altsyncram_1tn2.tdf Line: 55
 Info (12128): Elaborating entity "programCounter" for hierarchy "programCounter:inst10"
+<<<<<<< Updated upstream
+=======
+Info (12128): Elaborating entity "clk_select" for hierarchy "clk_select:inst32"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "clk_select:inst32|lpm_mux:LPM_MUX_component" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/clk_select.v Line: 73
+Info (12130): Elaborated megafunction instantiation "clk_select:inst32|lpm_mux:LPM_MUX_component" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/clk_select.v Line: 73
+Info (12133): Instantiated megafunction "clk_select:inst32|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/clk_select.v Line: 73
+    Info (12134): Parameter "lpm_size" = "4"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "1"
+    Info (12134): Parameter "lpm_widths" = "2"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_sjc.tdf
+    Info (12023): Found entity 1: mux_sjc File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/db/mux_sjc.tdf Line: 22
+Info (12128): Elaborating entity "mux_sjc" for hierarchy "clk_select:inst32|lpm_mux:LPM_MUX_component|mux_sjc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:inst31"
+>>>>>>> Stashed changes
 Info (12128): Elaborating entity "jr_mux" for hierarchy "jr_mux:inst101"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "jr_mux:inst101|lpm_mux:LPM_MUX_component" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/jr_mux.v Line: 68
-Info (12130): Elaborated megafunction instantiation "jr_mux:inst101|lpm_mux:LPM_MUX_component" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/jr_mux.v Line: 68
-Info (12133): Instantiated megafunction "jr_mux:inst101|lpm_mux:LPM_MUX_component" with the following parameter: File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/jr_mux.v Line: 68
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "jr_mux:inst101|lpm_mux:LPM_MUX_component" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/jr_mux.v Line: 68
+Info (12130): Elaborated megafunction instantiation "jr_mux:inst101|lpm_mux:LPM_MUX_component" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/jr_mux.v Line: 68
+Info (12133): Instantiated megafunction "jr_mux:inst101|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/jr_mux.v Line: 68
     Info (12134): Parameter "lpm_size" = "2"
     Info (12134): Parameter "lpm_type" = "LPM_MUX"
     Info (12134): Parameter "lpm_width" = "32"
     Info (12134): Parameter "lpm_widths" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_dlc.tdf
-    Info (12023): Found entity 1: mux_dlc File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/db/mux_dlc.tdf Line: 22
+    Info (12023): Found entity 1: mux_dlc File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/db/mux_dlc.tdf Line: 22
 Info (12128): Elaborating entity "mux_dlc" for hierarchy "jr_mux:inst101|lpm_mux:LPM_MUX_component|mux_dlc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "MEM_WB" for hierarchy "MEM_WB:inst9"
 Info (12128): Elaborating entity "EX_MEM" for hierarchy "EX_MEM:inst8"
 Info (12128): Elaborating entity "ID_EX" for hierarchy "ID_EX:inst6"
 Info (12128): Elaborating entity "controller" for hierarchy "controller:inst14"
+<<<<<<< Updated upstream
 Warning (10240): Verilog HDL Always Construct warning at controller.v(13): inferring latch(es) for variable "reg_wen", which holds its previous value in one or more paths through the always construct File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/controller.v Line: 13
 Warning (10240): Verilog HDL Always Construct warning at controller.v(13): inferring latch(es) for variable "reg_des", which holds its previous value in one or more paths through the always construct File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/controller.v Line: 13
 Warning (10240): Verilog HDL Always Construct warning at controller.v(13): inferring latch(es) for variable "dmem_alu", which holds its previous value in one or more paths through the always construct File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/controller.v Line: 13
@@ -2217,18 +2564,42 @@ Info (10041): Inferred latch for "jr" at controller.v(13) File: E:/ECE/ece473/Pr
 Info (10041): Inferred latch for "dmem_alu" at controller.v(13) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/controller.v Line: 13
 Info (10041): Inferred latch for "reg_des" at controller.v(13) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/controller.v Line: 13
 Info (10041): Inferred latch for "reg_wen" at controller.v(13) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/controller.v Line: 13
+=======
+Warning (10240): Verilog HDL Always Construct warning at controller.v(20): inferring latch(es) for variable "reg_des", which holds its previous value in one or more paths through the always construct File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 20
+Warning (10240): Verilog HDL Always Construct warning at controller.v(20): inferring latch(es) for variable "dmem_alu", which holds its previous value in one or more paths through the always construct File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 20
+Warning (10240): Verilog HDL Always Construct warning at controller.v(20): inferring latch(es) for variable "mem_wen", which holds its previous value in one or more paths through the always construct File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 20
+Warning (10240): Verilog HDL Always Construct warning at controller.v(20): inferring latch(es) for variable "jr", which holds its previous value in one or more paths through the always construct File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 20
+Warning (10240): Verilog HDL Always Construct warning at controller.v(20): inferring latch(es) for variable "alu_sel", which holds its previous value in one or more paths through the always construct File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 20
+Warning (10240): Verilog HDL Always Construct warning at controller.v(20): inferring latch(es) for variable "jump", which holds its previous value in one or more paths through the always construct File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 20
+Warning (10240): Verilog HDL Always Construct warning at controller.v(20): inferring latch(es) for variable "alu_code", which holds its previous value in one or more paths through the always construct File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 20
+Info (10041): Inferred latch for "alu_code[0]" at controller.v(90) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 90
+Info (10041): Inferred latch for "alu_code[1]" at controller.v(90) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 90
+Info (10041): Inferred latch for "alu_code[2]" at controller.v(90) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 90
+Info (10041): Inferred latch for "alu_code[3]" at controller.v(90) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 90
+Info (10041): Inferred latch for "alu_code[4]" at controller.v(90) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 90
+Info (10041): Inferred latch for "jump" at controller.v(90) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 90
+Info (10041): Inferred latch for "alu_sel" at controller.v(90) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 90
+Info (10041): Inferred latch for "jr" at controller.v(90) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 90
+Info (10041): Inferred latch for "mem_wen" at controller.v(90) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 90
+Info (10041): Inferred latch for "dmem_alu" at controller.v(90) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 90
+Info (10041): Inferred latch for "reg_des" at controller.v(90) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/controller.v Line: 90
+>>>>>>> Stashed changes
 Info (12128): Elaborating entity "IF_ID" for hierarchy "IF_ID:inst4"
 Info (12128): Elaborating entity "ins_meme" for hierarchy "ins_meme:inst1"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ins_meme:inst1|altsyncram:altsyncram_component" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/ins_meme.v Line: 99
-Info (12130): Elaborated megafunction instantiation "ins_meme:inst1|altsyncram:altsyncram_component" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/ins_meme.v Line: 99
-Info (12133): Instantiated megafunction "ins_meme:inst1|altsyncram:altsyncram_component" with the following parameter: File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/ins_meme.v Line: 99
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ins_meme:inst1|altsyncram:altsyncram_component" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ins_meme.v Line: 99
+Info (12130): Elaborated megafunction instantiation "ins_meme:inst1|altsyncram:altsyncram_component" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ins_meme.v Line: 99
+Info (12133): Instantiated megafunction "ins_meme:inst1|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ins_meme.v Line: 99
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
+<<<<<<< Updated upstream
     Info (12134): Parameter "init_file" = "../Milestone-1/m1_test1_Code.mif"
+=======
+    Info (12134): Parameter "init_file" = "../../Milestone-4-Test-Programs/Test09-Fibonacci-Codenew.mif"
+>>>>>>> Stashed changes
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
     Info (12134): Parameter "lpm_type" = "altsyncram"
     Info (12134): Parameter "numwords_a" = "64"
@@ -2248,6 +2619,7 @@ Info (12133): Instantiated megafunction "ins_meme:inst1|altsyncram:altsyncram_co
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
+<<<<<<< Updated upstream
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_5en2.tdf
     Info (12023): Found entity 1: altsyncram_5en2 File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/db/altsyncram_5en2.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_5en2" for hierarchy "ins_meme:inst1|altsyncram:altsyncram_component|altsyncram_5en2:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
@@ -2288,28 +2660,90 @@ Info (10041): Inferred latch for "result[28]" at alu.v(19) File: E:/ECE/ece473/P
 Info (10041): Inferred latch for "result[29]" at alu.v(19) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/alu.v Line: 19
 Info (10041): Inferred latch for "result[30]" at alu.v(19) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/alu.v Line: 19
 Info (10041): Inferred latch for "result[31]" at alu.v(19) File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/alu.v Line: 19
+=======
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mvp2.tdf
+    Info (12023): Found entity 1: altsyncram_mvp2 File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/db/altsyncram_mvp2.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_mvp2" for hierarchy "ins_meme:inst1|altsyncram:altsyncram_component|altsyncram_mvp2:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Info (12128): Elaborating entity "ID_EX_fwd" for hierarchy "ID_EX_fwd:inst21"
+Info (12128): Elaborating entity "MEM_WB" for hierarchy "MEM_WB:inst9"
+Info (12128): Elaborating entity "EX_MEM" for hierarchy "EX_MEM:inst8"
+Info (12128): Elaborating entity "alu" for hierarchy "alu:inst18"
+Warning (10240): Verilog HDL Always Construct warning at alu.v(19): inferring latch(es) for variable "result", which holds its previous value in one or more paths through the always construct File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Warning (10240): Verilog HDL Always Construct warning at alu.v(19): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[0]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[1]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[2]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[3]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[4]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[5]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[6]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[7]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[8]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[9]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[10]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[11]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[12]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[13]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[14]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[15]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[16]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[17]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[18]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[19]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[20]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[21]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[22]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[23]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[24]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[25]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[26]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[27]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[28]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[29]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[30]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (10041): Inferred latch for "result[31]" at alu.v(19) File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/alu.v Line: 19
+Info (12128): Elaborating entity "rs_foward" for hierarchy "rs_foward:inst16"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "rs_foward:inst16|lpm_mux:LPM_MUX_component" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/rs_foward.v Line: 69
+Info (12130): Elaborated megafunction instantiation "rs_foward:inst16|lpm_mux:LPM_MUX_component" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/rs_foward.v Line: 69
+Info (12133): Instantiated megafunction "rs_foward:inst16|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/rs_foward.v Line: 69
+    Info (12134): Parameter "lpm_size" = "3"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "32"
+    Info (12134): Parameter "lpm_widths" = "2"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_flc.tdf
+    Info (12023): Found entity 1: mux_flc File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/db/mux_flc.tdf Line: 22
+Info (12128): Elaborating entity "mux_flc" for hierarchy "rs_foward:inst16|lpm_mux:LPM_MUX_component|mux_flc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Info (12128): Elaborating entity "dmem_alu" for hierarchy "dmem_alu:inst7"
+Info (12128): Elaborating entity "fowarding_unit" for hierarchy "fowarding_unit:inst13"
+Info (12128): Elaborating entity "imm_mux" for hierarchy "imm_mux:inst20"
+Info (12128): Elaborating entity "rt_foward" for hierarchy "rt_foward:inst17"
+>>>>>>> Stashed changes
 Info (12128): Elaborating entity "req_ds_mux" for hierarchy "req_ds_mux:inst15"
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "req_ds_mux:inst15|lpm_mux:LPM_MUX_component" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/req_ds_mux.v Line: 68
-Info (12130): Elaborated megafunction instantiation "req_ds_mux:inst15|lpm_mux:LPM_MUX_component" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/req_ds_mux.v Line: 68
-Info (12133): Instantiated megafunction "req_ds_mux:inst15|lpm_mux:LPM_MUX_component" with the following parameter: File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/req_ds_mux.v Line: 68
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "req_ds_mux:inst15|lpm_mux:LPM_MUX_component" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/req_ds_mux.v Line: 68
+Info (12130): Elaborated megafunction instantiation "req_ds_mux:inst15|lpm_mux:LPM_MUX_component" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/req_ds_mux.v Line: 68
+Info (12133): Instantiated megafunction "req_ds_mux:inst15|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/req_ds_mux.v Line: 68
     Info (12134): Parameter "lpm_size" = "2"
     Info (12134): Parameter "lpm_type" = "LPM_MUX"
     Info (12134): Parameter "lpm_width" = "5"
     Info (12134): Parameter "lpm_widths" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_tjc.tdf
-    Info (12023): Found entity 1: mux_tjc File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/db/mux_tjc.tdf Line: 22
+    Info (12023): Found entity 1: mux_tjc File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/db/mux_tjc.tdf Line: 22
 Info (12128): Elaborating entity "mux_tjc" for hierarchy "req_ds_mux:inst15|lpm_mux:LPM_MUX_component|mux_tjc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
 Info (12128): Elaborating entity "data_memer" for hierarchy "data_memer:inst2"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "data_memer:inst2|altsyncram:altsyncram_component" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/data_memer.v Line: 99
-Info (12130): Elaborated megafunction instantiation "data_memer:inst2|altsyncram:altsyncram_component" File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/data_memer.v Line: 99
-Info (12133): Instantiated megafunction "data_memer:inst2|altsyncram:altsyncram_component" with the following parameter: File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/data_memer.v Line: 99
+Info (12128): Elaborating entity "altsyncram" for hierarchy "data_memer:inst2|altsyncram:altsyncram_component" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/data_memer.v Line: 99
+Info (12130): Elaborated megafunction instantiation "data_memer:inst2|altsyncram:altsyncram_component" File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/data_memer.v Line: 99
+Info (12133): Instantiated megafunction "data_memer:inst2|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/data_memer.v Line: 99
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
+<<<<<<< Updated upstream
     Info (12134): Parameter "init_file" = "../Lab 6/data_mem.mif"
+=======
+    Info (12134): Parameter "init_file" = "./Milestone-4-Test-Programs/Test02-Multiply-Data-test.mif"
+>>>>>>> Stashed changes
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
     Info (12134): Parameter "lpm_type" = "altsyncram"
     Info (12134): Parameter "numwords_a" = "64"
@@ -2329,6 +2763,7 @@ Info (12133): Instantiated megafunction "data_memer:inst2|altsyncram:altsyncram_
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
+<<<<<<< Updated upstream
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_cbm2.tdf
     Info (12023): Found entity 1: altsyncram_cbm2 File: E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/db/altsyncram_cbm2.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_cbm2" for hierarchy "data_memer:inst2|altsyncram:altsyncram_component|altsyncram_cbm2:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
@@ -2451,11 +2886,74 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 148 warnings
     Info: Processing ended: Sat Nov 02 11:42:01 2019
     Info: Elapsed time: 00:00:37
     Info: Total CPU time (on all processors): 00:00:55
+=======
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qtp2.tdf
+    Info (12023): Found entity 1: altsyncram_qtp2 File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/db/altsyncram_qtp2.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_qtp2" for hierarchy "data_memer:inst2|altsyncram:altsyncram_component|altsyncram_qtp2:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Warning (113031): 64 out of 64 addresses are reinitialized. The latest initialized data will replace the existing data. There are 64 warnings found, and 10 warnings are reported. File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/Milestone-4-Test-Programs/Test02-Multiply-Data-test.mif Line: 1
+    Warning (113030): Memory Initialization File address 0 is reinitialized File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ Line: 13
+    Warning (113030): Memory Initialization File address 1 is reinitialized File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ Line: 14
+    Warning (113030): Memory Initialization File address 2 is reinitialized File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ Line: 15
+    Warning (113030): Memory Initialization File address 3 is reinitialized File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ Line: 15
+    Warning (113030): Memory Initialization File address 4 is reinitialized File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ Line: 15
+    Warning (113030): Memory Initialization File address 5 is reinitialized File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ Line: 15
+    Warning (113030): Memory Initialization File address 6 is reinitialized File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ Line: 15
+    Warning (113030): Memory Initialization File address 7 is reinitialized File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ Line: 15
+    Warning (113030): Memory Initialization File address 8 is reinitialized File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ Line: 15
+    Warning (113030): Memory Initialization File address 9 is reinitialized File: C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/ Line: 15
+Info (12128): Elaborating entity "regfile" for hierarchy "regfile:inst5"
+Info (12128): Elaborating entity "sign_extender" for hierarchy "sign_extender:inst19"
+Info (12128): Elaborating entity "pc_stall" for hierarchy "pc_stall:inst24"
+Info (12128): Elaborating entity "pc_branch" for hierarchy "pc_branch:inst26"
+Info (12128): Elaborating entity "branch_controller_v2" for hierarchy "branch_controller_v2:inst33"
+Info (12128): Elaborating entity "jump_mux" for hierarchy "jump_mux:inst29"
+Info (12128): Elaborating entity "add4" for hierarchy "add4:inst3"
+Info (12128): Elaborating entity "concat" for hierarchy "concat:inst28"
+Info (12128): Elaborating entity "jump_shift" for hierarchy "jump_shift:inst27"
+Error (12009): Node "if_id_ins[25]" is missing source
+Error (12009): Node "if_id_ins[24]" is missing source
+Error (12009): Node "if_id_ins[23]" is missing source
+Error (12009): Node "if_id_ins[22]" is missing source
+Error (12009): Node "if_id_ins[21]" is missing source
+Error (12009): Node "if_id_ins[20]" is missing source
+Error (12009): Node "if_id_ins[19]" is missing source
+Error (12009): Node "if_id_ins[18]" is missing source
+Error (12009): Node "if_id_ins[17]" is missing source
+Error (12009): Node "if_id_ins[16]" is missing source
+Error (12009): Node "if_id_ins[15]" is missing source
+Error (12009): Node "if_id_ins[14]" is missing source
+Error (12009): Node "if_id_ins[13]" is missing source
+Error (12009): Node "if_id_ins[12]" is missing source
+Error (12009): Node "if_id_ins[11]" is missing source
+Error (12009): Node "if_id_ins[10]" is missing source
+Error (12009): Node "if_id_ins[9]" is missing source
+Error (12009): Node "if_id_ins[8]" is missing source
+Error (12009): Node "if_id_ins[7]" is missing source
+Error (12009): Node "if_id_ins[6]" is missing source
+Error (12009): Node "if_id_ins[5]" is missing source
+Error (12009): Node "if_id_ins[4]" is missing source
+Error (12009): Node "if_id_ins[3]" is missing source
+Error (12009): Node "if_id_ins[2]" is missing source
+Error (12009): Node "if_id_ins[1]" is missing source
+Error (12009): Node "if_id_ins[0]" is missing source
+Error (12009): Node "if_id_ins[31]" is missing source
+Error (12009): Node "if_id_ins[30]" is missing source
+Error (12009): Node "if_id_ins[29]" is missing source
+Error (12009): Node "if_id_ins[28]" is missing source
+Error (12009): Node "if_id_ins[27]" is missing source
+Error (12009): Node "if_id_ins[26]" is missing source
+Info (144001): Generated suppressed messages file C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/output_files/pipeline_project.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 32 errors, 61 warnings
+    Error: Peak virtual memory: 4912 megabytes
+    Error: Processing ended: Fri Dec 13 16:15:25 2019
+    Error: Elapsed time: 00:00:13
+    Error: Total CPU time (on all processors): 00:00:22
+>>>>>>> Stashed changes
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in E:/ECE/ece473/Project-Milestone1/ECE473FinalProject/output_files/pipeline_project.map.smsg.
+The suppressed messages can be found in C:/Users/Eli/Documents/School/ECE473/Lab6/ECE473_LAB6-PIPELINE_REG-master/ECE473FinalProject/output_files/pipeline_project.map.smsg.
 
 
