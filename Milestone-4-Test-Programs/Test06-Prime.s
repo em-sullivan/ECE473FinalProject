@@ -2,7 +2,7 @@
 #	Function: 	Determine if the number is a prime
 #	Output:		$v0 = 1 if prime; Otherwise, $so = 0.
 .data
-	num: .word 997		# An integer number to be checked
+	num: .word 113		# An integer number to be checked
 
 	.text
 isPrime:

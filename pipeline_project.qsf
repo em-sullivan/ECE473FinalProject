@@ -296,14 +296,12 @@ set_global_assignment -name QIP_FILE imm_mux.qip
 set_global_assignment -name VERILOG_FILE hazard_control.v
 set_global_assignment -name QIP_FILE stall.qip
 set_global_assignment -name QIP_FILE pc_stall.qip
-set_global_assignment -name VERILOG_FILE branch_controller.v
 set_global_assignment -name QIP_FILE pc_branch.qip
 set_global_assignment -name VERILOG_FILE jump_shift.v
 set_global_assignment -name VERILOG_FILE concat.v
 set_global_assignment -name QIP_FILE jump_mux.qip
 set_global_assignment -name VERILOG_FILE output_files/auto_reset.v
 set_global_assignment -name QIP_FILE clk_select.qip
-set_global_assignment -name VERILOG_FILE jr_address.v
 set_global_assignment -name SYNTHESIS_EFFORT FAST
 set_global_assignment -name FITTER_EFFORT "FAST FIT"
 set_global_assignment -name VERILOG_FILE branch_controller_v2.v

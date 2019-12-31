@@ -4,7 +4,7 @@
 # Print prompt1
 
 # Call fibonacci
-	li $a0, 4
+	li $a0, 9
 	jal fibonacci
 	nop
 	move $a1, $v0   # save return value to a1

@@ -43,4 +43,4 @@ exit:	beq $0, $0, exit	#program stops here
 # Data segment
 ##############
  	.data
-para:	.word 4, 5
+para:	.word 37, 21

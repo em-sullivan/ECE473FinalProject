@@ -11,7 +11,7 @@
 .data
 	A: .word 1 2 3 4 5 6	# f = 1 + 2x + 3x^2 + 4x^3 + 5x^4 + 6x^5
 	n: .word 6		
-	x: .word 2		# f = ?
+	x: .word 5		# f = ?
 	
 .text
 main:	

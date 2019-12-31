@@ -6,8 +6,8 @@
  
 
 .data
-	num1: .word 96 		# Number A
-	num2: .word 180		# Number B
+	num1: .word 125 		# Number A
+	num2: .word 150		# Number B
 #	$a0 = Input 1
 # 	$a1 = Input 2
 # 	$v0 = GCD(A,B)															

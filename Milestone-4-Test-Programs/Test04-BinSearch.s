@@ -15,7 +15,7 @@ main:
 	# output: address of needle in $v0 if found,
 	# 0 in $v0 otherwise
 
-	li $a0, 99 		# needle value
+	li $a0, 70 		# needle value
 	la $a1, first 		# address of first array entry
 	la $a2, last		# address of last array entry
 	addi $a2, $a2, -4

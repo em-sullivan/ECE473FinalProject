@@ -12,12 +12,7 @@ module ID_EX_fwd(
 	output reg [31:0] rt_data_out);
 	
 	always @* begin
-	
-		/*if(jr == 1) begin
 		
-			rs_data_out = rs_data_in;
-			
-		end */	
 	
 		if(rs_in == mem_wb_regd && mem_wb_wen == 1'b1 && mem_wb_regd !=0 ) begin
 		
@@ -31,11 +26,6 @@ module ID_EX_fwd(
 			
 		end
 		
-		/*if(jr == 1) begin
-		
-			rt_data_out = rt_data_in;
-		
-		end */ 
 		
 		if(rt_in == mem_wb_regd && mem_wb_wen == 1'b1 && mem_wb_regd !=0) begin
 			
