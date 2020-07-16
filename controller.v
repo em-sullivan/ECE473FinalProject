@@ -19,7 +19,6 @@ module controller (
 	
 		if (ins[31:26] == 6'b000000) begin //If op-code is 0, r type instructions
 			
-			
 			reg_wen = 1;
 			reg_des = 0; //rd
 			dmem_alu = 0; //alu result
@@ -99,7 +98,6 @@ module controller (
 				alu_sel = 1;
 				alu_code = 13;
 				jump = 0;
-			
 			
 			end else if(ins[31:26] == 6'b001101) begin //ori
 			
@@ -185,7 +183,6 @@ module controller (
 				alu_code = 12;
 				jump = 1;
 				
-			
 			end else if(ins[31:26] == 6'b000011) begin //jal
 			
 				reg_wen = 0;
@@ -236,7 +233,6 @@ module controller (
 				alu_code = 24;
 				jump = 0;
 				
-				
 			end else begin 
 					
 				reg_wen = 0;
@@ -247,10 +243,8 @@ module controller (
 				alu_code = 12;
 				jump = 0;
 				
-			end
+			end		
 			
-				
-		
 		end else begin
 		
 			reg_wen = 0;
@@ -258,8 +252,5 @@ module controller (
 		end
 		
 	end
-		
-	
-	
 	
 endmodule

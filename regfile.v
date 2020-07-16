@@ -33,8 +33,7 @@ module regfile(
 			
 			register[28] = 32'h10008000;
 			register[29] = 32'h000000FF;
-			
-		
+					
 	end
 	
 	always @(posedge clk) begin //Writes on the first half of the clock cycle

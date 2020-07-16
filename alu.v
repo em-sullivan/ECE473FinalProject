@@ -69,11 +69,10 @@ module alu(
 				end else begin
 				
 					result = 0;
+					
 				end
 				
-			
 			end
-			
 			
 			8: begin //sll
 			
@@ -99,6 +98,7 @@ module alu(
 						
 					end
 				end
+				
 			end
 			
 			11: begin //jr
@@ -134,6 +134,7 @@ module alu(
 				end else begin
 				
 					result = 0;
+				
 				end
 				
 			end

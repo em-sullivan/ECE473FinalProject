@@ -11,7 +11,6 @@ module IF_ID (
 	output reg [31:0] pc_out,
 	output reg [31:0] ins_out);
 	
-	
 	initial begin
 	
 		ins_out = 0;
@@ -24,9 +23,7 @@ module IF_ID (
 		if(rst == 1'b1) begin
 		
 			ins_out <= 0;
-			pc_out <= 0;
-	
-			
+			pc_out <= 0;	
 			
 		end
 		

@@ -41,6 +41,5 @@ module hazard_control(
 		end
 		
 	end
-		
 	
 endmodule

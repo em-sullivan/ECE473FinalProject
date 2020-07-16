@@ -23,7 +23,6 @@ module ID_EX (
 	output reg [4:0] shamt_out,
 	output reg [31:0] sign_imm_out,
 	
-	
 	//controller junk
 	input reg_wen_in,
 	input reg_des_in,
@@ -41,7 +40,6 @@ module ID_EX (
 	output reg alu_sel_out,
 	output reg [4:0] alu_code_out,
 	output reg [31:0] pc_out);
-	
 	
 	initial begin
 	

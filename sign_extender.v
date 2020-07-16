@@ -16,7 +16,6 @@ module sign_extender(
 		
 		out_zeroes = out_zeroes + in_num;
 		
-		
 	end
 
 endmodule
